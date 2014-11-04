@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 个人档案UI -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center_horizontal"
+	android:background="@drawable/main_frame_bg">
+	<include layout="@layout/layout_title_bar" />
+	<LinearLayout android:orientation="vertical"
+		android:background="@drawable/layout_white_bg" style="@style/setting_layout_bg">
+		<!-- 生日 -->
+		<FrameLayout android:id="@+id/lytSPBirthday" style="@style/setting_layout">
+			<TextView style="@style/setting_layout_left" android:text="@string/profile_birthday" />
+			<TextView android:id="@+id/tvSPBirthday" style="@style/setting_layout_text" />
+			<ImageView style="@style/setting_layout_right" android:src="@drawable/main_setting_layout_down" />
+		</FrameLayout>
+		<LinearLayout style="@style/setting_layout_line" />
+		<!-- 性别 -->
+		<FrameLayout android:id="@+id/lytSPSex" style="@style/setting_layout">
+			<TextView style="@style/setting_layout_left" android:text="@string/profile_sex" />
+			<TextView android:id="@+id/tvSPSex" style="@style/setting_layout_text" />
+			<ImageView style="@style/setting_layout_right" android:src="@drawable/main_setting_layout_down" />
+		</FrameLayout>
+		<LinearLayout style="@style/setting_layout_line" />
+		<!-- 身高 -->
+		<FrameLayout android:id="@+id/lytSPHeight" style="@style/setting_layout">
+			<TextView style="@style/setting_layout_left" android:text="@string/profile_height" />
+			<TextView android:id="@+id/tvSPHeight" style="@style/setting_layout_text" />
+			<ImageView style="@style/setting_layout_right" android:src="@drawable/main_setting_layout_down" />
+		</FrameLayout>
+		<LinearLayout style="@style/setting_layout_line" />
+		<!-- 体重 -->
+		<FrameLayout android:id="@+id/lytSPWeight" style="@style/setting_layout">
+			<TextView style="@style/setting_layout_left" android:text="@string/profile_weight" />
+			<TextView android:id="@+id/tvSPWeight" style="@style/setting_layout_text" />
+			<ImageView style="@style/setting_layout_right" android:src="@drawable/main_setting_layout_down" />
+		</FrameLayout>
+		<LinearLayout style="@style/setting_layout_line" />
+		<!-- 居住城市 -->
+		<FrameLayout android:id="@+id/lytSPCityCode" style="@style/setting_layout">
+			<TextView style="@style/setting_layout_left" android:text="@string/profile_city" />
+			<TextView android:id="@+id/tvSPCityCode" style="@style/setting_layout_text" />
+			<ImageView style="@style/setting_layout_right" android:src="@drawable/main_setting_layout_down" />
+		</FrameLayout>
+		<LinearLayout style="@style/setting_layout_line" />
+		<!-- 目标体重 -->
+		<FrameLayout android:id="@+id/lytSPTargetWeight" style="@style/setting_layout">
+			<TextView style="@style/setting_layout_left" android:text="@string/profile_targetweight" />
+			<TextView android:id="@+id/tvSPTargetWeight" style="@style/setting_layout_text" />
+			<ImageView style="@style/setting_layout_right" android:src="@drawable/main_setting_layout_down" />
+		</FrameLayout>
+		<LinearLayout style="@style/setting_layout_line" />
+		<!-- 个人体力活动情况 -->
+		<FrameLayout android:id="@+id/lytSPVitality" style="@style/setting_layout">
+			<TextView style="@style/setting_layout_left" android:text="@string/profile_vitality" />
+			<TextView android:id="@+id/tvSPVitality" style="@style/setting_layout_text" />
+			<ImageView style="@style/setting_layout_right" android:src="@drawable/main_setting_layout_down" />
+		</FrameLayout>
+	</LinearLayout>
+	
+	
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.xikang.calorie.activity" android:versionCode="5"
+	android:versionName="1.1">
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:name=".MapApp" android:theme="@android:style/Theme.NoTitleBar">
+
+		<activity android:name="Loading" android:label="@string/app_name"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name="MainBMI" android:screenOrientation="portrait" />
+		<activity android:name="MainFrame" android:screenOrientation="portrait" />
+		<activity android:name=".MainSetting" />
+		<activity android:name=".Setting" />
+		<activity android:name=".SettingIntroduce" />
+		<activity android:name=".ProductIntroduce"
+			android:screenOrientation="portrait" />
+		<activity android:name=".SettingRemind"
+			android:screenOrientation="portrait" />
+		<activity android:name=".SettingRemindEdit"
+			android:screenOrientation="portrait" />
+		<activity android:name=".SettingRemindCalories"
+			android:screenOrientation="portrait" />
+		<activity android:name=".SettingProfile"
+			android:screenOrientation="portrait" />
+		<activity android:name=".SettingAccount"
+			android:screenOrientation="portrait" />
+		<activity android:name=".SettingRegister"
+			android:screenOrientation="portrait" />
+		<activity android:name=".SettingLogined"
+			android:screenOrientation="portrait" />
+		<activity android:name=".MainActions"
+			android:screenOrientation="portrait" />
+		<activity android:name=".ActionContent"
+			android:screenOrientation="portrait" />
+
+		<receiver android:name="com.xikang.calorie.notification.CalorieReceiver">
+			<intent-filter android:priority="1000">
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+		</receiver>
+		<service android:name="com.xikang.calorie.notification.CalorieService"
+			android:enabled="true" />
+		<activity android:name="com.xikang.calorie.notification.CalorieDialog"
+			android:screenOrientation="portrait" android:theme="@style/Theme.CustomDialog" />
+
+		<activity android:name="MainCalories"
+			android:screenOrientation="portrait" />
+		<activity android:name="SportTip" android:screenOrientation="portrait" />
+		<activity android:name="CalorieShare"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="weibo4android" android:host="CalorieShare" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="MainHistory" />
+		<activity android:name="MainTop" />
+		<activity android:name="HistoryFrame"
+			android:screenOrientation="portrait" />
+		<activity android:name="HistoryDistance" />
+		<activity android:name="HistorySteps" />
+		<activity android:name="HistoryTime" />
+		<activity android:name="HistoryExercise" />
+
+		<activity android:name="RankFrame" android:screenOrientation="portrait" />
+		<activity android:name="RankCalorie" />
+		<activity android:name="RankCity" />
+		<activity android:name="RankGroup" />
+
+		<activity android:name=".Map" />
+
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-sdk android:targetSdkVersion="8" />
+	<uses-sdk android:minSdkVersion="8" />
+</manifest>

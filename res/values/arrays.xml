@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="array_remind_time_type">
+		<item>早饭前</item>
+		<item>午饭后</item>
+		<item>晚饭后</item>
+	</string-array>
+
+	<string-array name="array_remind_sport_range">
+		<item>早上运动周期:5:00~9:00</item>
+		<item>中午运动周期:10:30~14:00</item>
+		<item>晚上运动周期:17:00~21:00</item>
+	</string-array>
+	
+	<string-array name="array_remind_msg1">
+		<item>一天在于晨，早上简单锻炼身体是有好处的</item>
+		<item>饭后百步走能活九十九</item>
+		<item>生命在于运动，晚饭后活动有益身心健康</item>
+	</string-array>
+	
+	<string-array name="array_remind_msg2">
+		<item>，你早上没有完成目标</item>
+		<item>，你中午的运动目标没有完成</item>
+		<item>，你还没有完成今天的目标</item>
+	</string-array>
+	
+	<string-array name="array_remind_msg3">
+		<item>，中午要多走@STEP步，加油哦！</item>
+		<item>，晚上要多走@STEP步，要记得哦!</item>
+		<item>，明天要加油啊!</item>
+	</string-array>	
+	
+	<string-array name="array_profile_sex">
+		<item>女</item>
+		<item>男</item>
+	</string-array>
+	<string-array name="array_profile_vitality">
+		<item>轻体力活动</item>
+		<item>中体力活动</item>
+		<item>重体力活动</item>
+	</string-array>
+</resources>

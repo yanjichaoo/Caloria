@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 账户管理UI -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center_horizontal"
+	android:background="@drawable/main_frame_bg">
+	<include layout="@layout/layout_title_bar" />
+
+	<LinearLayout style="@style/setting_layout_bg"
+		android:orientation="vertical" android:background="@drawable/layout_black_bg">
+
+		<TableLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:stretchColumns="1">
+			<!-- 邮箱 -->
+			<TableRow style="@style/setting_login_tr">
+				<TextView android:text="@string/setting_register_email"
+					style="@style/setting_login_text" />
+				<EditText android:id="@+id/etSLEmail" style="@style/setting_login_edit"
+					android:enabled="false" android:focusable="false" />
+			</TableRow>
+			<!-- 名称 -->
+			<TableRow style="@style/setting_login_tr">
+				<TextView android:text="@string/setting_register_user_name"
+					style="@style/setting_login_text" />
+				<EditText android:id="@+id/etSLUserName" style="@style/setting_login_edit"
+					android:enabled="false" android:focusable="false" />
+			</TableRow>
+			<!-- 手机 -->
+			<TableRow style="@style/setting_login_tr">
+				<TextView android:text="@string/setting_register_phone"
+					style="@style/setting_login_text" />
+				<EditText android:id="@+id/etSLPhone" style="@style/setting_login_edit"
+					android:enabled="false" android:focusable="false" />
+			</TableRow>
+			<!-- 腕表 -->
+			<TableRow style="@style/setting_login_tr">
+				<TextView android:text="@string/setting_register_watch_id"
+					style="@style/setting_login_text" />
+				<EditText android:id="@+id/etSLWatch" style="@style/setting_login_edit"
+					android:enabled="false" android:focusable="false" />
+			</TableRow>
+			<LinearLayout style="@style/setting_login_tr"
+				android:layout_marginBottom="10dp">
+				<Button android:id="@+id/btnSLModify" style="@style/setting_login_button"
+					android:text="@string/setting_logined_modify" />
+				<Button android:id="@+id/btnSLSubmit"
+					android:layout_marginLeft="10dp" android:text="@string/common_submit"
+					style="@style/setting_login_button" />
+			</LinearLayout>
+		</TableLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

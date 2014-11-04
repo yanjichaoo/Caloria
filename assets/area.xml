@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page>
+	<common>
+		<result status="1" />
+	</common>
+	<body>
+		<nation_1 code="11000000" name="中华人民共和国">
+			<province_1 code="110000" name="北京市">
+				<city_1_1 code="110101" name="东城区" />
+				<city_1_2 code="110102" name="西城区" />
+				<city_1_3 code="110103" name="崇文区" />
+				<city_1_4 code="110104" name="宣武区" />
+				<city_1_5 code="110105" name="朝阳区" />
+				<city_1_6 code="110106" name="丰台区" />
+				<city_1_7 code="110107" name="石景山区" />
+				<city_1_8 code="110108" name="海淀区" />
+				<city_1_9 code="110109" name="门头沟区" />
+				<city_1_10 code="110111" name="房山区" />
+				<city_1_11 code="110112" name="通州区" />
+				<city_1_12 code="110113" name="顺义区" />
+				<city_1_13 code="110114" name="昌平区" />
+				<city_1_14 code="110115" name="大兴区" />
+				<city_1_15 code="110116" name="怀柔区" />
+				<city_1_16 code="110117" name="平谷区" />
+				<city_1_17 code="110228" name="密云县" />
+				<city_1_18 code="110229" name="延庆县" />
+			</province_1>
+			<province_2 code="120000" name="天津市">
+				<city_2_1 code="120101" name="和平区" />
+				<city_2_2 code="120102" name="河东区" />
+				<city_2_3 code="120103" name="河西区" />
+				<city_2_4 code="120104" name="南开区" />
+				<city_2_5 code="120105" name="河北区" />
+				<city_2_6 code="120106" name="红桥区" />
+				<city_2_7 code="120107" name="塘沽区" />
+				<city_2_8 code="120108" name="汉沽区" />
+				<city_2_9 code="120109" name="大港区" />
+				<city_2_10 code="120110" name="东丽区" />
+				<city_2_11 code="120111" name="西青区" />
+				<city_2_12 code="120112" name="津南区" />
+				<city_2_13 code="120113" name="北辰区" />
+				<city_2_14 code="120114" name="武清区" />
+				<city_2_15 code="120115" name="宝坻区" />
+				<city_2_16 code="120221" name="宁河县" />
+				<city_2_17 code="120223" name="静海县" />
+				<city_2_18 code="120225" name="蓟县" />
+			</province_2>
+			<province_3 code="130000" name="河北省">
+				<city_3_1 code="130100" name="石家庄市" />
+				<city_3_2 code="130200" name="唐山市" />
+				<city_3_3 code="130300" name="秦皇岛市" />
+				<city_3_4 code="130400" name="邯郸市" />
+				<city_3_5 code="130500" name="邢台市" />
+				<city_3_6 code="130600" name="保定市" />
+				<city_3_7 code="130700" name="张家口市" />
+				<city_3_8 code="130800" name="承德市" />
+				<city_3_9 code="130900" name="沧州市" />
+				<city_3_10 code="131000" name="廊坊市" />
+			</province_3>
+			<province_4 code="140000" name="山西省">
+				<city_4_1 code="140100" name="太原市" />
+				<city_4_2 code="140200" name="大同市" />
+				<city_4_3 code="140300" name="阳泉市" />
+				<city_4_4 code="140400" name="长治市" />
+				<city_4_5 code="140500" name="晋城市" />
+				<city_4_6 code="140600" name="朔州市" />
+				<city_4_7 code="140700" name="晋中市" />
+				<city_4_8 code="140800" name="运城市" />
+				<city_4_9 code="140900" name="忻州市" />
+				<city_4_10 code="141000" name="临汾市" />
+				<city_4_11 code="141100" name="吕梁市" />
+			</province_4>
+			<province_5 code="150000" name="内蒙古自治区">
+				<city_5_1 code="150100" name="呼和浩特市" />
+				<city_5_2 code="150200" name="包头市" />
+				<city_5_3 code="150300" name="乌海市" />
+				<city_5_4 code="150400" name="赤峰市" />
+				<city_5_5 code="150500" name="通辽市" />
+				<city_5_6 code="150600" name="鄂尔多斯市" />
+				<city_5_7 code="150700" name="呼伦贝尔市" />
+				<city_5_8 code="150800" name="巴彦淖尔市" />
+				<city_5_9 code="150900" name="乌兰察布市" />
+				<city_5_10 code="152200" name="兴安盟" />
+				<city_5_11 code="152500" name="锡林郭勒盟" />
+				<city_5_12 code="152900" name="阿拉善盟" />
+			</province_5>
+			<province_6 code="210000" name="辽宁省">
+				<city_6_1 code="210100" name="沈阳市" />
+				<city_6_2 code="210200" name="大连市" />
+				<city_6_3 code="210300" name="鞍山市" />
+				<city_6_4 code="210400" name="抚顺市" />
+				<city_6_5 code="210500" name="本溪市" />
+				<city_6_6 code="210600" name="丹东市" />
+				<city_6_7 code="210700" name="锦州市" />
+				<city_6_8 code="210800" name="营口市" />
+				<city_6_9 code="210900" name="阜新市" />
+				<city_6_10 code="211000" name="辽阳市" />
+				<city_6_11 code="211100" name="盘锦市" />
+				<city_6_12 code="211200" name="铁岭市" />
+				<city_6_13 code="211300" name="朝阳市" />
+				<city_6_14 code="211400" name="葫芦岛市" />
+			</province_6>
+			<province_7 code="220000" name="吉林省">
+				<city_7_1 code="220100" name="长春市" />
+				<city_7_2 code="220200" name="吉林市" />
+				<city_7_3 code="220300" name="四平市" />
+				<city_7_4 code="220400" name="辽源市" />
+				<city_7_5 code="220500" name="通化市" />
+				<city_7_6 code="220600" name="白山市" />
+				<city_7_7 code="220700" name="松原市" />
+				<city_7_8 code="220800" name="白城市" />
+				<city_7_9 code="222400" name="延边朝鲜族自治州" />
+			</province_7>
+			<province_8 code="230000" name="黑龙江省">
+				<city_8_1 code="230100" name="哈尔滨市" />
+				<city_8_2 code="230200" name="齐齐哈尔市" />
+				<city_8_3 code="230300" name="鸡西市" />
+				<city_8_4 code="230400" name="鹤岗市" />
+				<city_8_5 code="230500" name="双鸭山市" />
+				<city_8_6 code="230600" name="大庆市" />
+				<city_8_7 code="230700" name="伊春市" />
+				<city_8_8 code="230800" name="佳木斯市" />
+				<city_8_9 code="230900" name="七台河市" />
+				<city_8_10 code="231000" name="牡丹江市" />
+				<city_8_11 code="231200" name="绥化市" />
+				<city_8_12 code="232700" name="大兴安岭地区" />
+			</province_8>
+			<province_9 code="310000" name="上海市">
+				<city_9_1 code="310101" name="黄浦区" />
+				<city_9_2 code="310103" name="卢湾区" />
+				<city_9_3 code="310104" name="徐汇区" />
+				<city_9_4 code="310105" name="长宁区" />
+				<city_9_5 code="310106" name="静安区" />
+				<city_9_6 code="310107" name="普陀区" />
+				<city_9_7 code="310108" name="闸北区" />
+				<city_9_8 code="310109" name="虹口区" />
+				<city_9_9 code="310110" name="杨浦区" />
+				<city_9_10 code="310112" name="闵行区" />
+				<city_9_11 code="310113" name="宝山区" />
+				<city_9_12 code="310114" name="嘉定区" />
+				<city_9_13 code="310115" name="浦东新区" />
+				<city_9_14 code="310116" name="金山区" />
+				<city_9_15 code="310117" name="松江区" />
+				<city_9_16 code="310118" name="青浦区" />
+				<city_9_17 code="310119" name="南汇区" />
+				<city_9_18 code="310120" name="奉贤区" />
+				<city_9_19 code="310230" name="崇明县" />
+			</province_9>
+			<province_10 code="320000" name="江苏省">
+				<city_10_1 code="320100" name="南京市" />
+				<city_10_2 code="320200" name="无锡市" />
+				<city_10_3 code="320300" name="徐州市" />
+				<city_10_4 code="320400" name="常州市" />
+				<city_10_5 code="320500" name="苏州市" />
+				<city_10_6 code="320600" name="南通市" />
+				<city_10_7 code="320700" name="连云港市" />
+				<city_10_8 code="320800" name="淮安市" />
+				<city_10_9 code="320900" name="盐城市" />
+				<city_10_10 code="321000" name="扬州市" />
+				<city_10_11 code="321100" name="镇江市" />
+				<city_10_12 code="321200" name="泰州市" />
+				<city_10_13 code="321300" name="宿迁市" />
+			</province_10>
+			<province_11 code="330000" name="浙江省">
+				<city_11_1 code="330100" name="杭州市" />
+				<city_11_2 code="330200" name="宁波市" />
+				<city_11_3 code="330300" name="温州市" />
+				<city_11_4 code="330400" name="嘉兴市" />
+				<city_11_5 code="330500" name="湖州市" />
+				<city_11_6 code="330600" name="绍兴市" />
+				<city_11_7 code="330700" name="金华市" />
+				<city_11_8 code="330800" name="衢州市" />
+				<city_11_9 code="330900" name="舟山市" />
+				<city_11_10 code="331000" name="台州市" />
+				<city_11_11 code="331100" name="丽水市" />
+			</province_11>
+			<province_12 code="340000" name="安徽省">
+				<city_12_1 code="340100" name="合肥市" />
+				<city_12_2 code="340200" name="芜湖市" />
+				<city_12_3 code="340300" name="蚌埠市" />
+				<city_12_4 code="340400" name="淮南市" />
+				<city_12_5 code="340500" name="马鞍山市" />
+				<city_12_6 code="340600" name="淮北市" />
+				<city_12_7 code="340700" name="铜陵市" />
+				<city_12_8 code="340800" name="安庆市" />
+				<city_12_9 code="341000" name="黄山市" />
+				<city_12_10 code="341100" name="滁州市" />
+				<city_12_11 code="341200" name="阜阳市" />
+				<city_12_12 code="341300" name="宿州市" />
+				<city_12_13 code="341400" name="巢湖市" />
+				<city_12_14 code="341500" name="六安市" />
+				<city_12_15 code="341600" name="亳州市" />
+				<city_12_16 code="341700" name="池州市" />
+				<city_12_17 code="341800" name="宣城市" />
+			</province_12>
+			<province_13 code="350000" name="福建省">
+				<city_13_1 code="350100" name="福州市" />
+				<city_13_2 code="350200" name="厦门市" />
+				<city_13_3 code="350300" name="莆田市" />
+				<city_13_4 code="350400" name="三明市" />
+				<city_13_5 code="350500" name="泉州市" />
+				<city_13_6 code="350600" name="漳州市" />
+				<city_13_7 code="350700" name="南平市" />
+				<city_13_8 code="350800" name="龙岩市" />
+				<city_13_9 code="350900" name="宁德市" />
+			</province_13>
+			<province_14 code="360000" name="江西省">
+				<city_14_1 code="360100" name="南昌市" />
+				<city_14_2 code="360200" name="景德镇市" />
+				<city_14_3 code="360300" name="萍乡市" />
+				<city_14_4 code="360400" name="九江市" />
+				<city_14_5 code="360500" name="新余市" />
+				<city_14_6 code="360600" name="鹰潭市" />
+				<city_14_7 code="360700" name="赣州市" />
+				<city_14_8 code="360800" name="吉安市" />
+				<city_14_9 code="360900" name="宜春市" />
+				<city_14_10 code="361000" name="抚州市" />
+				<city_14_11 code="361100" name="上饶市" />
+			</province_14>
+			<province_15 code="370000" name="山东省">
+				<city_15_1 code="370100" name="济南市" />
+				<city_15_2 code="370200" name="青岛市" />
+				<city_15_3 code="370300" name="淄博市" />
+				<city_15_4 code="370400" name="枣庄市" />
+				<city_15_5 code="370500" name="东营市" />
+				<city_15_6 code="370600" name="烟台市" />
+				<city_15_7 code="370700" name="潍坊市" />
+				<city_15_8 code="370800" name="济宁市" />
+				<city_15_9 code="370900" name="泰安市" />
+				<city_15_10 code="371000" name="威海市" />
+				<city_15_11 code="371100" name="日照市" />
+				<city_15_12 code="371200" name="莱芜市" />
+				<city_15_13 code="371300" name="临沂市" />
+				<city_15_14 code="371400" name="德州市" />
+				<city_15_15 code="371500" name="聊城市" />
+				<city_15_16 code="371600" name="滨州市" />
+				<city_15_17 code="371700" name="菏泽市" />
+			</province_15>
+			<province_16 code="410000" name="河南省">
+				<city_16_1 code="410100" name="郑州市" />
+				<city_16_2 code="410200" name="开封市" />
+				<city_16_3 code="410300" name="洛阳市" />
+				<city_16_4 code="410400" name="平顶山市" />
+				<city_16_5 code="410500" name="安阳市" />
+				<city_16_6 code="410600" name="鹤壁市" />
+				<city_16_7 code="410700" name="新乡市" />
+				<city_16_8 code="410800" name="焦作市" />
+				<city_16_9 code="410900" name="濮阳市" />
+				<city_16_10 code="411000" name="许昌市" />
+				<city_16_11 code="411100" name="漯河市" />
+				<city_16_12 code="411200" name="三门峡市" />
+				<city_16_13 code="411300" name="南阳市" />
+				<city_16_14 code="411400" name="商丘市" />
+				<city_16_15 code="411500" name="信阳市" />
+				<city_16_16 code="411600" name="周口市" />
+				<city_16_17 code="411700" name="驻马店市" />
+				<city_16_18 code="419001" name="济源市" />
+			</province_16>
+			<province_17 code="420000" name="湖北省">
+				<city_17_1 code="420100" name="武汉市" />
+				<city_17_2 code="420200" name="黄石市" />
+				<city_17_3 code="420300" name="十堰市" />
+				<city_17_4 code="420500" name="宜昌市" />
+				<city_17_5 code="420600" name="襄樊市" />
+				<city_17_6 code="420700" name="鄂州市" />
+				<city_17_7 code="420800" name="荆门市" />
+				<city_17_8 code="420900" name="孝感市" />
+				<city_17_9 code="421000" name="荆州市" />
+				<city_17_10 code="421100" name="黄冈市" />
+				<city_17_11 code="421200" name="咸宁市" />
+				<city_17_12 code="421300" name="随州市" />
+				<city_17_13 code="422800" name="恩施土家族苗族自治州" />
+				<city_17_14 code="429004" name="仙桃市" />
+				<city_17_15 code="429005" name="潜江市" />
+				<city_17_16 code="429006" name="天门市" />
+				<city_17_17 code="429021" name="神农架林区" />
+			</province_17>
+			<province_18 code="430000" name="湖南省">
+				<city_18_1 code="430100" name="长沙市" />
+				<city_18_2 code="430200" name="株洲市" />
+				<city_18_3 code="430300" name="湘潭市" />
+				<city_18_4 code="430400" name="衡阳市" />
+				<city_18_5 code="430500" name="邵阳市" />
+				<city_18_6 code="430600" name="岳阳市" />
+				<city_18_7 code="430700" name="常德市" />
+				<city_18_8 code="430800" name="张家界市" />
+				<city_18_9 code="430900" name="益阳市" />
+				<city_18_10 code="431000" name="郴州市" />
+				<city_18_11 code="431100" name="永州市" />
+				<city_18_12 code="431200" name="怀化市" />
+				<city_18_13 code="431300" name="娄底市" />
+				<city_18_14 code="433100" name="湘西土家族苗族自治州" />
+			</province_18>
+			<province_19 code="440000" name="广东省">
+				<city_19_1 code="440100" name="广州市" />
+				<city_19_2 code="440200" name="韶关市" />
+				<city_19_3 code="440300" name="深圳市" />
+				<city_19_4 code="440400" name="珠海市" />
+				<city_19_5 code="440500" name="汕头市" />
+				<city_19_6 code="440600" name="佛山市" />
+				<city_19_7 code="440700" name="江门市" />
+				<city_19_8 code="440800" name="湛江市" />
+				<city_19_9 code="440900" name="茂名市" />
+				<city_19_10 code="441200" name="肇庆市" />
+				<city_19_11 code="441300" name="惠州市" />
+				<city_19_12 code="441400" name="梅州市" />
+				<city_19_13 code="441500" name="汕尾市" />
+				<city_19_14 code="441600" name="河源市" />
+				<city_19_15 code="441700" name="阳江市" />
+				<city_19_16 code="441800" name="清远市" />
+				<city_19_17 code="441900" name="东莞市" />
+				<city_19_18 code="442000" name="中山市" />
+				<city_19_19 code="445100" name="潮州市" />
+				<city_19_20 code="445200" name="揭阳市" />
+				<city_19_21 code="445300" name="云浮市" />
+			</province_19>
+			<province_20 code="450000" name="广西壮族自治区">
+				<city_20_1 code="450100" name="南宁市" />
+				<city_20_2 code="450200" name="柳州市" />
+				<city_20_3 code="450300" name="桂林市" />
+				<city_20_4 code="450400" name="梧州市" />
+				<city_20_5 code="450500" name="北海市" />
+				<city_20_6 code="450600" name="防城港市" />
+				<city_20_7 code="450700" name="钦州市" />
+				<city_20_8 code="450800" name="贵港市" />
+				<city_20_9 code="450900" name="玉林市" />
+				<city_20_10 code="451000" name="百色市" />
+				<city_20_11 code="451100" name="贺州市" />
+				<city_20_12 code="451200" name="河池市" />
+				<city_20_13 code="451300" name="来宾市" />
+				<city_20_14 code="451400" name="崇左市" />
+			</province_20>
+			<province_21 code="460000" name="海南省">
+				<city_21_1 code="460100" name="海口市" />
+				<city_21_2 code="460200" name="三亚市" />
+				<city_21_3 code="469001" name="五指山市" />
+				<city_21_4 code="469002" name="琼海市" />
+				<city_21_5 code="469003" name="儋州市" />
+				<city_21_6 code="469005" name="文昌市" />
+				<city_21_7 code="469006" name="万宁市" />
+				<city_21_8 code="469007" name="东方市" />
+				<city_21_9 code="469021" name="定安县" />
+				<city_21_10 code="469022" name="屯昌县" />
+				<city_21_11 code="469023" name="澄迈县" />
+				<city_21_12 code="469024" name="临高县" />
+				<city_21_13 code="469025" name="白沙黎族自治县" />
+				<city_21_14 code="469026" name="昌江黎族自治县" />
+				<city_21_15 code="469027" name="乐东黎族自治县" />
+				<city_21_16 code="469028" name="陵水黎族自治县" />
+				<city_21_17 code="469029" name="保亭黎族苗族自治县" />
+				<city_21_18 code="469030" name="琼中黎族苗族自治县" />
+				<city_21_19 code="469031" name="西沙群岛" />
+				<city_21_20 code="469032" name="南沙群岛" />
+				<city_21_21 code="469033" name="中沙群岛的岛礁及其海域" />
+			</province_21>
+			<province_22 code="500000" name="重庆市">
+				<city_22_1 code="500101" name="万州区" />
+				<city_22_2 code="500102" name="涪陵区" />
+				<city_22_3 code="500103" name="渝中区" />
+				<city_22_4 code="500104" name="大渡口区" />
+				<city_22_5 code="500105" name="江北区" />
+				<city_22_6 code="500106" name="沙坪坝区" />
+				<city_22_7 code="500107" name="九龙坡区" />
+				<city_22_8 code="500108" name="南岸区" />
+				<city_22_9 code="500109" name="北碚区" />
+				<city_22_10 code="500110" name="万盛区" />
+				<city_22_11 code="500111" name="双桥区" />
+				<city_22_12 code="500112" name="渝北区" />
+				<city_22_13 code="500113" name="巴南区" />
+				<city_22_14 code="500114" name="黔江区" />
+				<city_22_15 code="500115" name="长寿区" />
+				<city_22_16 code="500116" name="江津区" />
+				<city_22_17 code="500117" name="合川区" />
+				<city_22_18 code="500118" name="永川区" />
+				<city_22_19 code="500119" name="南川区" />
+				<city_22_20 code="500222" name="綦江县" />
+				<city_22_21 code="500223" name="潼南县" />
+				<city_22_22 code="500224" name="铜梁县" />
+				<city_22_23 code="500225" name="大足县" />
+				<city_22_24 code="500226" name="荣昌县" />
+				<city_22_25 code="500227" name="璧山县" />
+				<city_22_26 code="500228" name="梁平县" />
+				<city_22_27 code="500229" name="城口县" />
+				<city_22_28 code="500230" name="丰都县" />
+				<city_22_29 code="500231" name="垫江县" />
+				<city_22_30 code="500232" name="武隆县" />
+				<city_22_31 code="500233" name="忠县" />
+				<city_22_32 code="500234" name="开县" />
+				<city_22_33 code="500235" name="云阳县" />
+				<city_22_34 code="500236" name="奉节县" />
+				<city_22_35 code="500237" name="巫山县" />
+				<city_22_36 code="500238" name="巫溪县" />
+				<city_22_37 code="500240" name="石柱土家族自治县" />
+				<city_22_38 code="500241" name="秀山土家族苗族自治县" />
+				<city_22_39 code="500242" name="酉阳土家族苗族自治县" />
+				<city_22_40 code="500243" name="彭水苗族土家族自治县" />
+			</province_22>
+			<province_23 code="510000" name="四川省">
+				<city_23_1 code="510100" name="成都市" />
+				<city_23_2 code="510300" name="自贡市" />
+				<city_23_3 code="510400" name="攀枝花市" />
+				<city_23_4 code="510500" name="泸州市" />
+				<city_23_5 code="510600" name="德阳市" />
+				<city_23_6 code="510700" name="绵阳市" />
+				<city_23_7 code="510800" name="广元市" />
+				<city_23_8 code="510900" name="遂宁市" />
+				<city_23_9 code="511000" name="内江市" />
+				<city_23_10 code="511100" name="乐山市" />
+				<city_23_11 code="511300" name="南充市" />
+				<city_23_12 code="511400" name="眉山市" />
+				<city_23_13 code="511500" name="宜宾市" />
+				<city_23_14 code="511600" name="广安市" />
+				<city_23_15 code="511700" name="达州市" />
+				<city_23_16 code="511800" name="雅安市" />
+				<city_23_17 code="511900" name="巴中市" />
+				<city_23_18 code="512000" name="资阳市" />
+				<city_23_19 code="513200" name="阿坝藏族羌族自治州" />
+				<city_23_20 code="513300" name="甘孜藏族自治州" />
+				<city_23_21 code="513400" name="凉山彝族自治州" />
+			</province_23>
+			<province_24 code="520000" name="贵州省">
+				<city_24_1 code="520100" name="贵阳市" />
+				<city_24_2 code="520200" name="六盘水市" />
+				<city_24_3 code="520300" name="遵义市" />
+				<city_24_4 code="520400" name="安顺市" />
+				<city_24_5 code="522200" name="铜仁地区" />
+				<city_24_6 code="522300" name="黔西南布依族苗族自治州" />
+				<city_24_7 code="522400" name="毕节地区" />
+				<city_24_8 code="522600" name="黔东南苗族侗族自治州" />
+				<city_24_9 code="522700" name="黔南布依族苗族自治州" />
+			</province_24>
+			<province_25 code="530000" name="云南省">
+				<city_25_1 code="530100" name="昆明市" />
+				<city_25_2 code="530300" name="曲靖市" />
+				<city_25_3 code="530400" name="玉溪市" />
+				<city_25_4 code="530500" name="保山市" />
+				<city_25_5 code="530600" name="昭通市" />
+				<city_25_6 code="530700" name="丽江市" />
+				<city_25_7 code="530800" name="普洱市" />
+				<city_25_8 code="530900" name="临沧市" />
+				<city_25_9 code="532300" name="楚雄彝族自治州" />
+				<city_25_10 code="532500" name="红河哈尼族彝族自治州" />
+				<city_25_11 code="532600" name="文山壮族苗族自治州" />
+				<city_25_12 code="532800" name="西双版纳傣族自治州" />
+				<city_25_13 code="532900" name="大理白族自治州" />
+				<city_25_14 code="533100" name="德宏傣族景颇族自治州" />
+				<city_25_15 code="533300" name="怒江傈僳族自治州" />
+				<city_25_16 code="533400" name="迪庆藏族自治州" />
+			</province_25>
+			<province_26 code="540000" name="西藏自治区">
+				<city_26_1 code="540100" name="拉萨市" />
+				<city_26_2 code="542100" name="昌都地区" />
+				<city_26_3 code="542200" name="山南地区" />
+				<city_26_4 code="542300" name="日喀则地区" />
+				<city_26_5 code="542400" name="那曲地区" />
+				<city_26_6 code="542500" name="阿里地区" />
+				<city_26_7 code="542600" name="林芝地区" />
+			</province_26>
+			<province_27 code="610000" name="陕西省">
+				<city_27_1 code="610100" name="西安市" />
+				<city_27_2 code="610200" name="铜川市" />
+				<city_27_3 code="610300" name="宝鸡市" />
+				<city_27_4 code="610400" name="咸阳市" />
+				<city_27_5 code="610500" name="渭南市" />
+				<city_27_6 code="610600" name="延安市" />
+				<city_27_7 code="610700" name="汉中市" />
+				<city_27_8 code="610800" name="榆林市" />
+				<city_27_9 code="610900" name="安康市" />
+				<city_27_10 code="611000" name="商洛市" />
+			</province_27>
+			<province_28 code="620000" name="甘肃省">
+				<city_28_1 code="620100" name="兰州市" />
+				<city_28_2 code="620200" name="嘉峪关市" />
+				<city_28_3 code="620300" name="金昌市" />
+				<city_28_4 code="620400" name="白银市" />
+				<city_28_5 code="620500" name="天水市" />
+				<city_28_6 code="620600" name="武威市" />
+				<city_28_7 code="620700" name="张掖市" />
+				<city_28_8 code="620800" name="平凉市" />
+				<city_28_9 code="620900" name="酒泉市" />
+				<city_28_10 code="621000" name="庆阳市" />
+				<city_28_11 code="621100" name="定西市" />
+				<city_28_12 code="621200" name="陇南市" />
+				<city_28_13 code="622900" name="临夏回族自治州" />
+				<city_28_14 code="623000" name="甘南藏族自治州" />
+			</province_28>
+			<province_29 code="630000" name="青海省">
+				<city_29_1 code="630100" name="西宁市" />
+				<city_29_2 code="632100" name="海东地区" />
+				<city_29_3 code="632200" name="海北藏族自治州" />
+				<city_29_4 code="632300" name="黄南藏族自治州" />
+				<city_29_5 code="632500" name="海南藏族自治州" />
+				<city_29_6 code="632600" name="果洛藏族自治州" />
+				<city_29_7 code="632700" name="玉树藏族自治州" />
+				<city_29_8 code="632800" name="海西蒙古族藏族自治州" />
+			</province_29>
+			<province_30 code="640000" name="宁夏回族自治区">
+				<city_30_1 code="640100" name="银川市" />
+				<city_30_2 code="640200" name="石嘴山市" />
+				<city_30_3 code="640300" name="吴忠市" />
+				<city_30_4 code="640400" name="固原市" />
+				<city_30_5 code="640500" name="中卫市" />
+			</province_30>
+			<province_31 code="650000" name="新疆维吾尔自治区">
+				<city_31_1 code="650100" name="乌鲁木齐市" />
+				<city_31_2 code="650200" name="克拉玛依市" />
+				<city_31_3 code="652100" name="吐鲁番地区" />
+				<city_31_4 code="652200" name="哈密地区" />
+				<city_31_5 code="652300" name="昌吉回族自治州" />
+				<city_31_6 code="652700" name="博尔塔拉蒙古自治州" />
+				<city_31_7 code="652800" name="巴音郭楞蒙古自治州" />
+				<city_31_8 code="652900" name="阿克苏地区" />
+				<city_31_9 code="653000" name="克孜勒苏柯尔克孜自治州" />
+				<city_31_10 code="653100" name="喀什地区" />
+				<city_31_11 code="653200" name="和田地区" />
+				<city_31_12 code="654000" name="伊犁哈萨克自治州" />
+				<city_31_13 code="654200" name="塔城地区" />
+				<city_31_14 code="654300" name="阿勒泰地区" />
+				<city_31_15 code="659001" name="石河子市" />
+				<city_31_16 code="659002" name="阿拉尔市" />
+				<city_31_17 code="659003" name="图木舒克市" />
+				<city_31_18 code="659004" name="五家渠市" />
+			</province_31>
+			<province_32 code="710000" name="台湾省">
+				<city_32_1 code="710001" name="台北市" />
+				<city_32_2 code="710002" name="高雄市" />
+				<city_32_3 code="710003" name="基隆市" />
+				<city_32_4 code="710004" name="新竹市" />
+				<city_32_5 code="710005" name="台中市" />
+				<city_32_6 code="710006" name="嘉义市" />
+				<city_32_7 code="710007" name="台南市" />
+				<city_32_8 code="710008" name="台北县" />
+				<city_32_9 code="710009" name="宜兰县" />
+				<city_32_10 code="710010" name="桃园县" />
+				<city_32_11 code="710011" name="新竹县" />
+				<city_32_12 code="710012" name="苗栗县" />
+				<city_32_13 code="710013" name="台中县" />
+				<city_32_14 code="710014" name="彰化县" />
+				<city_32_15 code="710015" name="南投县" />
+				<city_32_16 code="710016" name="云林县" />
+				<city_32_17 code="710017" name="嘉义县" />
+				<city_32_18 code="710018" name="台南县" />
+				<city_32_19 code="710019" name="高雄县" />
+				<city_32_20 code="710020" name="屏东县" />
+				<city_32_21 code="710021" name="台东县" />
+				<city_32_22 code="710022" name="花莲县" />
+				<city_32_23 code="710023" name="澎湖县" />
+			</province_32>
+			<province_33 code="810000" name="香港特别行政区"></province_33>
+			<province_34 code="820000" name="澳门特别行政区"></province_34>
+		</nation_1>
+		<nation_2 code="12000000" name="美利坚合众国">
+			<province_1 code="12110000" name="华盛顿哥伦比亚特区"></province_1>
+			<province_2 code="12120000" name="亚拉巴马州"></province_2>
+			<province_3 code="12130000" name="阿拉斯加州"></province_3>
+			<province_4 code="12140000" name="亚利桑那州"></province_4>
+			<province_5 code="12150000" name="阿肯色州"></province_5>
+			<province_6 code="12160000" name="加利福尼亚州"></province_6>
+			<province_7 code="12170000" name="科罗拉多州"></province_7>
+			<province_8 code="12180000" name="康涅狄格州"></province_8>
+			<province_9 code="12190000" name="特拉华州"></province_9>
+			<province_10 code="12200000" name="佛罗里达州"></province_10>
+			<province_11 code="12210000" name="佐治亚州"></province_11>
+			<province_12 code="12220000" name="夏威夷州"></province_12>
+			<province_13 code="12230000" name="爱达荷州"></province_13>
+			<province_14 code="12240000" name="伊利诺伊州"></province_14>
+			<province_15 code="12250000" name="印第安纳州"></province_15>
+			<province_16 code="12260000" name="艾奥瓦州"></province_16>
+			<province_17 code="12270000" name="堪萨斯州"></province_17>
+			<province_18 code="12280000" name="肯塔基州"></province_18>
+			<province_19 code="12290000" name="路易斯安那州"></province_19>
+			<province_20 code="12300000" name="缅因州"></province_20>
+			<province_21 code="12310000" name="马里兰州"></province_21>
+			<province_22 code="12320000" name="马萨诸塞州"></province_22>
+			<province_23 code="12330000" name="密歇根州"></province_23>
+			<province_24 code="12340000" name="明尼苏达州"></province_24>
+			<province_25 code="12350000" name="密西西比州"></province_25>
+			<province_26 code="12360000" name="密苏里州"></province_26>
+			<province_27 code="12370000" name="蒙大拿州"></province_27>
+			<province_28 code="12380000" name="内布拉斯加州"></province_28>
+			<province_29 code="12390000" name="内华达州"></province_29>
+			<province_30 code="12400000" name="新罕布什尔州"></province_30>
+			<province_31 code="12410000" name="新泽西州"></province_31>
+			<province_32 code="12420000" name="新墨西哥州"></province_32>
+			<province_33 code="12430000" name="纽约州"></province_33>
+			<province_34 code="12440000" name="北卡罗来纳州"></province_34>
+			<province_35 code="12450000" name="北达科他州"></province_35>
+			<province_36 code="12460000" name="俄亥俄州"></province_36>
+			<province_37 code="12470000" name="俄克拉何马州"></province_37>
+			<province_38 code="12480000" name="俄勒冈州"></province_38>
+			<province_39 code="12490000" name="宾夕法尼亚州"></province_39>
+			<province_40 code="12500000" name="罗得岛州"></province_40>
+			<province_41 code="12510000" name="南卡罗来纳州"></province_41>
+			<province_42 code="12520000" name="南达科他州"></province_42>
+			<province_43 code="12530000" name="田纳西州"></province_43>
+			<province_44 code="12540000" name="德克萨斯州"></province_44>
+			<province_45 code="12550000" name="犹他州"></province_45>
+			<province_46 code="12560000" name="佛蒙特州"></province_46>
+			<province_47 code="12570000" name="弗吉尼亚州"></province_47>
+			<province_48 code="12580000" name="华盛顿州"></province_48>
+			<province_49 code="12590000" name="西弗吉尼亚州"></province_49>
+			<province_50 code="12600000" name="威斯康星州"></province_50>
+			<province_51 code="12610000" name="怀俄明州"></province_51>
+		</nation_2>
+	</body>
+</page>

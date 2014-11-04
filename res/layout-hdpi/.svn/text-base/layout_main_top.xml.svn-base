@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<include layout="@layout/layout_title_bar" />
+
+	<LinearLayout style="@style/top_item_all_layout"
+		android:orientation="vertical">
+		<TextView style="@style/top_item_title" android:text="@string/rank_county_label" />
+		<LinearLayout android:id="@+id/rank" style="@style/top_item_content_layout">
+			<RelativeLayout style="@style/top_item_content_left_layout">
+				<LinearLayout style="@style/top_item_content_left_ranking_layout"
+					android:orientation="vertical">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+						<TextView android:id="@+id/ranking_label"
+							style="@style/top_item_content_left_ranking_text" android:text="0" />
+						<ImageView android:id="@+id/rank_image"
+							style="@style/top_item_content_left_ranking_img" />
+					</LinearLayout>
+					<TextView android:id="@+id/rank_change"
+						style="@style/top_item_content_left_ranking_change_text"
+						android:text="@string/rank_change" />
+				</LinearLayout>
+				<LinearLayout style="@style/top_item_content_cut" />
+			</RelativeLayout>
+			
+			<RelativeLayout style="@style/top_item_content_right_layout">
+				<TextView android:id="@+id/ranking_message_up" style="@style/top_item_content_right_text"
+					android:text="查看全国使用情况排行榜!" />
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout style="@style/top_item_all_layout"
+		android:orientation="vertical">
+		<TextView style="@style/top_item_title" android:text="@string/rank_city_label" />
+		<LinearLayout android:id="@+id/city_rank" style="@style/top_item_content_layout">
+			<RelativeLayout style="@style/top_item_content_left_layout">
+				<LinearLayout style="@style/top_item_content_left_ranking_layout"
+					android:orientation="vertical">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+						<TextView android:id="@+id/city_ranking_label"
+							style="@style/top_item_content_left_ranking_text" android:text="0" />
+						<ImageView android:id="@+id/city_rank_image"
+							style="@style/top_item_content_left_ranking_img" />
+					</LinearLayout>
+					<TextView android:id="@+id/city_change"
+						style="@style/top_item_content_left_ranking_change_text"
+						android:text="@string/rank_change" />
+				</LinearLayout>
+				<LinearLayout style="@style/top_item_content_cut" />
+			</RelativeLayout>
+			<RelativeLayout style="@style/top_item_content_right_layout">
+				<TextView android:id="@+id/city_ranking_message_up" style="@style/top_item_content_right_text"
+					android:text="赶快完善个人资料吧,可以看到附近人群的排名情况!" />
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout style="@style/top_item_all_layout"
+		android:orientation="vertical">
+		<TextView style="@style/top_item_title" android:text="@string/rank_group_label" />
+		<LinearLayout android:id="@+id/group_rank" style="@style/top_item_content_layout">
+			<RelativeLayout style="@style/top_item_content_left_layout">
+				<LinearLayout style="@style/top_item_content_left_ranking_layout"
+					android:orientation="vertical">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+						<TextView android:id="@+id/group_ranking_label"
+							style="@style/top_item_content_left_ranking_text" android:text="0" />
+						<ImageView android:id="@+id/group_rank_image"
+							style="@style/top_item_content_left_ranking_img" />
+					</LinearLayout>
+					<TextView android:id="@+id/group_change" android:text="@string/rank_change"
+						style="@style/top_item_content_left_ranking_change_text" />
+				</LinearLayout>
+				<LinearLayout style="@style/top_item_content_cut" />
+			</RelativeLayout>
+			<RelativeLayout style="@style/top_item_content_right_layout">
+				<TextView android:id="@+id/group_ranking_message_up" style="@style/top_item_content_right_text"
+					android:text="赶快完善个人资料吧！可以看到相似人群的排名情况!" />
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

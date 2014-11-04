@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:gravity="center_horizontal" android:orientation="vertical">
+	<include layout="@layout/layout_title_bar" />
+	<LinearLayout style="@style/setting_layout_bg"
+		android:background="@drawable/layout_black_bg" android:orientation="vertical">
+		<TextView android:id="@+id/txCurrentTitle"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"
+			android:textColor="#FFFFFF" android:textSize="15sp" android:text="你尚未绑定腕表,无法接收运动数据!" />
+		<TextView android:id="@+id/txNextTitle" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp" android:layout_gravity="center_horizontal"
+			android:gravity="center_horizontal" android:textColor="#FFFFFF"
+			android:textSize="15sp" android:text="请在“账户管理”中,注册/登录绑定腕表后,即可接受运动数据." />
+	</LinearLayout>
+
+	<ScrollView android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical">
+			<LinearLayout style="@style/top_item_all_layout"
+				android:orientation="vertical">
+				<TextView style="@style/top_item_title" android:text="@string/historycalorie_label" />
+				<LinearLayout android:id="@+id/historyLayout"
+					style="@style/top_item_content_layout">
+					<RelativeLayout style="@style/top_item_content_left_layout">
+						<LinearLayout style="@style/top_item_content_left_ranking_layout"
+							android:orientation="vertical">
+							<LinearLayout android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+								<TextView android:id="@+id/txCalorieData"
+									style="@style/top_item_content_left_ranking_text" android:text="0" />
+								<TextView android:text="千卡" android:textSize="10sp"
+									android:layout_width="wrap_content" android:layout_height="wrap_content" />
+							</LinearLayout>
+							<TextView android:text="@string/historycal"
+								style="@style/top_item_content_left_ranking_change_text" />
+						</LinearLayout>
+						<LinearLayout style="@style/top_item_content_cut" />
+					</RelativeLayout>
+					<RelativeLayout style="@style/top_item_content_right_layout">
+						<TextView android:id="@+id/txNoSportDay" style="@style/top_item_content_right_text"
+							android:text="@string/noSportData" />
+					</RelativeLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout style="@style/top_item_all_layout"
+				android:orientation="vertical">
+				<TextView style="@style/top_item_title" android:text="@string/historydistance_label" />
+				<LinearLayout android:id="@+id/historyDistanceLayout"
+					style="@style/top_item_content_layout">
+					<RelativeLayout style="@style/top_item_content_left_layout">
+						<LinearLayout style="@style/top_item_content_left_ranking_layout"
+							android:orientation="vertical">
+							<LinearLayout android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+								<TextView android:id="@+id/txDistanceData"
+									style="@style/top_item_content_left_ranking_text" android:text="0" />
+								<TextView android:text="公里" android:textSize="10sp"
+									android:layout_width="wrap_content" android:layout_height="wrap_content" />
+							</LinearLayout>
+							<TextView android:text="@string/historydistance"
+								style="@style/top_item_content_left_ranking_change_text" />
+						</LinearLayout>
+						<LinearLayout style="@style/top_item_content_cut" />
+					</RelativeLayout>
+					<RelativeLayout style="@style/top_item_content_right_layout">
+						<TextView android:id="@+id/txDistanceTip" style="@style/top_item_content_right_text"
+							android:text="@string/noSportData" />
+					</RelativeLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout style="@style/top_item_all_layout"
+				android:orientation="vertical">
+				<TextView style="@style/top_item_title" android:text="@string/historytime_label" />
+				<LinearLayout android:id="@+id/historyTimeLayout"
+					style="@style/top_item_content_layout">
+					<RelativeLayout style="@style/top_item_content_left_layout">
+						<LinearLayout style="@style/top_item_content_left_ranking_layout"
+							android:orientation="vertical">
+							<LinearLayout android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+								<TextView android:id="@+id/txTimeData"
+									style="@style/top_item_content_left_ranking_text" android:text="0" />
+								<TextView android:text="天" android:textSize="10sp"
+									android:layout_width="wrap_content" android:layout_height="wrap_content" />
+							</LinearLayout>
+							<TextView android:text="@string/historyday"
+								style="@style/top_item_content_left_ranking_change_text" />
+						</LinearLayout>
+						<LinearLayout style="@style/top_item_content_cut" />
+					</RelativeLayout>
+					<RelativeLayout style="@style/top_item_content_right_layout">
+						<TextView android:id="@+id/txTimeTip" style="@style/top_item_content_right_text"
+							android:text="@string/noSportData" />
+					</RelativeLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

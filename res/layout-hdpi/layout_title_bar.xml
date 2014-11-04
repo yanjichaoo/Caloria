@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:background="@drawable/title_bar_bg">
+
+	<Button android:id="@+id/btnTBLeft" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:background="@drawable/title_left_selector"
+		style="@style/title_btn_text" android:layout_gravity="left|center_vertical"
+		android:layout_marginLeft="5dp" 
+		android:visibility="invisible" />
+
+	<TextView android:id="@+id/tvTBContent" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="center"
+		android:maxWidth="180dp" android:singleLine="true" android:textSize="22sp"
+		android:textColor="#ffffff" />
+
+	<Button android:id="@+id/btnTBRight" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:background="@drawable/title_right_selector"
+		style="@style/title_btn_text" android:layout_gravity="right|center_vertical"
+		android:layout_marginRight="10dp" android:visibility="invisible" />
+
+</FrameLayout>

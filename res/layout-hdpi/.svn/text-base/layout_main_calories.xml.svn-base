@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:clock="http://schemas.android.com/apk/res/com.xikang.calorie.activity"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<include layout="@layout/layout_title_bar">
+	</include>
+	<LinearLayout android:orientation="vertical" android:id="@+id/message_panel"
+		style="@style/setting_layout_bg" android:background="@drawable/layout_black_bg"
+		android:gravity="center" android:layout_marginTop="58dp">
+		<LinearLayout android:orientation="horizontal"
+			android:gravity="center" android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+			<TextView android:text="@string/first_title_2" android:id="@+id/first_title"
+				android:textSize="18sp" android:layout_width="wrap_content"
+				android:layout_gravity="center" android:layout_height="wrap_content"></TextView>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal"
+			android:gravity="center" android:layout_marginTop="6dp"
+			android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<TextView android:text="@string/second_title_2" android:id="@+id/second_title"
+				android:textSize="18sp" android:layout_marginTop="10dp"
+				android:layout_gravity="left" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:orientation="vertical"
+		android:layout_centerHorizontal="true" android:layout_below="@id/message_panel"
+		android:layout_marginTop="5dp" android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+		<com.xikang.calorie.view.PercentView
+			android:id="@+id/progressClock" android:layout_gravity="center"
+			android:layout_width="220dp" android:layout_height="220dp"
+			clock:title="@string/clock_title" clock:calorie="90" clock:unit="@string/calorie_unit"
+			clock:textColor="#FF000000" clock:titleTextSize="18sp"
+			clock:calorieTextSize="26sp" />
+	</LinearLayout>
+	<LinearLayout android:id="@+id/tips" android:orientation="horizontal"
+		android:layout_height="wrap_content" android:background="@drawable/tips_bg"
+		android:layout_width="fill_parent" android:layout_alignParentBottom="true">
+		<TextView android:text="@string/tip_note" android:id="@+id/tip_title"
+			android:textSize="18sp" android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical" android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp" android:layout_width="fill_parent" />
+	</LinearLayout>
+	<FrameLayout android:orientation="vertical"
+		android:layout_height="wrap_content" android:layout_marginTop="10dp"
+		android:layout_above="@id/tips" android:layout_width="fill_parent"
+		android:background="@drawable/i_col_down">
+		<ImageView android:id="@+id/sportLeftImage"
+			android:layout_width="wrap_content" android:layout_gravity="center_vertical|left"
+			android:layout_height="fill_parent" android:src="@drawable/set_col_bg_l" />
+		<Gallery android:id="@+id/sport_info_gallery"
+			android:layout_gravity="center_vertical" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:spacing="16dp"
+			android:layout_marginRight="24dp" android:layout_marginLeft="24dp"
+			android:fadingEdge="none" />
+		<ImageView android:id="@+id/sportRightImage"
+			android:layout_width="wrap_content" android:layout_gravity="center_vertical|right"
+			android:layout_height="fill_parent" android:src="@drawable/set_col_bg_r" />
+		<TextView android:id="@+id/sport_info_note" android:text="@string/sport_info_note1"
+			android:layout_gravity="center_vertical" android:layout_height="fill_parent"
+			android:textSize="18sp" android:layout_marginLeft="10dp"
+			android:layout_width="fill_parent" android:visibility="invisible" />
+	</FrameLayout>
+
+</RelativeLayout>

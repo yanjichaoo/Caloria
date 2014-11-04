@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 用户注册UI -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center_horizontal"
+	android:background="@drawable/main_frame_bg">
+	<include layout="@layout/layout_title_bar" />
+	<LinearLayout android:orientation="vertical"
+		android:background="@drawable/layout_black_bg" style="@style/setting_layout_bg">
+		<TableLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:stretchColumns="1">
+			<!-- 邮箱 -->
+			<TableRow style="@style/setting_login_tr">
+				<TextView android:text="@string/setting_register_email"
+					style="@style/setting_login_text" />
+				<EditText android:id="@+id/etSREmail" style="@style/setting_login_edit"
+					android:hint="@string/setting_register_required" />
+			</TableRow>
+			<!-- 密码 -->
+			<TableRow style="@style/setting_login_tr">
+				<TextView android:text="@string/setting_register_pwd"
+					style="@style/setting_login_text" />
+				<EditText android:id="@+id/etSRPwd" style="@style/setting_login_edit"
+					android:password="true" android:hint="@string/setting_register_required" />
+			</TableRow>
+			<!-- 确认密码 -->
+			<TableRow style="@style/setting_login_tr">
+				<TextView android:text="@string/setting_register_pwd_confirm"
+					style="@style/setting_login_text" />
+				<EditText android:id="@+id/etSRPwdConfirm" style="@style/setting_login_edit"
+					android:password="true" android:hint="@string/setting_register_required" />
+			</TableRow>
+			<!-- 腕表 -->
+			<TableRow style="@style/setting_login_tr">
+				<TextView android:text="@string/setting_register_watch_id"
+					style="@style/setting_login_text" />
+				<EditText android:id="@+id/etSRWatchId" style="@style/setting_login_edit"
+					android:hint="@string/setting_register_required" />
+			</TableRow>
+			<!-- 名称 -->
+			<TableRow style="@style/setting_login_tr">
+				<TextView android:text="@string/setting_register_user_name"
+					style="@style/setting_login_text" />
+				<EditText android:id="@+id/etSRUserName" style="@style/setting_login_edit"
+					android:hint="@string/setting_register_required" />
+			</TableRow>
+			<!-- 手机号 -->
+			<TableRow style="@style/setting_login_tr">
+				<TextView android:text="@string/setting_register_phone"
+					style="@style/setting_login_text" />
+				<EditText android:id="@+id/etSRPhone" style="@style/setting_login_edit" />
+			</TableRow>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:layout_marginBottom="10dp" android:layout_marginTop="10dp"
+				android:gravity="right" android:layout_marginRight="13dp">
+
+				<TextView android:id="@+id/tvSRProvision" android:layout_width="170dp"
+					android:layout_height="wrap_content" android:textColor="#669900"
+					android:text="@string/setting_register_message_1" android:textSize="15sp"
+					android:gravity="center_horizontal" />
+				<LinearLayout android:id="@+id/lySRRegister"
+					android:layout_width="170dp" android:layout_height="wrap_content"
+					android:background="@drawable/setting_login_bt_selector"
+					android:gravity="center" android:layout_marginTop="10dp">
+
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="#FFFFFF"
+						android:textSize="15sp" android:text="@string/setting_register_message_2" />
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+						android:textColor="#FFFFFF" android:textSize="12sp"
+						android:text="@string/setting_register_message_3" />
+				</LinearLayout>
+			</LinearLayout>
+		</TableLayout>
+	</LinearLayout>
+
+
+</LinearLayout>

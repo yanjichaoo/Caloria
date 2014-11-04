@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/main_frame_bg">
+	<include layout="@layout/layout_title_bar">
+	</include>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:padding="10dp"
+		android:orientation="vertical" 
+		android:layout_marginBottom="10dp">
+		<TextView android:text="@string/weibo_share_content"
+			android:id="@+id/weibo_share_content_label" android:textSize="20dp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+		<EditText android:id="@+id/weibo_share_content"
+			android:textSize="20dp" android:layout_below="@+id/weibo_share_content_label"
+			android:layout_above="@+id/btngroup" android:paddingTop="10dp"
+			android:gravity="top" android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+
+		<LinearLayout android:id="@+id/btngroup"
+			android:layout_alignParentBottom="true"
+			android:layout_centerInParent="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<Button android:id="@+id/btnOk" android:layout_width="wrap_content"
+				android:textSize="20dp" android:textColor="@color/white"
+				android:padding="12dp" android:layout_height="wrap_content"
+				android:background="@drawable/setting_login_bt_selector"
+				android:text="@string/common_ok" />
+
+			<Button android:id="@+id/btnCancel" android:layout_width="wrap_content"
+				android:textSize="20dp" android:textColor="@color/white"
+				android:layout_toRightOf="@+id/btnOk" android:layout_alignTop="@+id/btnOk"
+				android:layout_marginLeft="30dp" android:padding="12dp"
+				android:layout_height="wrap_content" android:background="@drawable/setting_login_bt_selector"
+				android:text="@string/common_cancel" />
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

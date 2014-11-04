@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/main_frame_bg">
+	<include layout="@layout/layout_title_bar" />
+	<RelativeLayout style="@style/setting_layout_bg"
+		android:background="@drawable/layout_black_bg" android:padding="10dp">
+		<LinearLayout android:id="@+id/lytAcTips"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="vertical">
+				<TextView android:id="@+id/tvActionDtlStartDate"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#FFFFFF" android:text="8月5日" />
+				<TextView android:id="@+id/tvActionDtlStartTime"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#FFFFFF" android:text="19:50" />
+			</LinearLayout>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+				android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+				android:text="-" android:textColor="#FFFFFF" />
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="vertical">
+				<TextView android:id="@+id/tvActionDtlEndDate"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#FFFFFF" android:text="8月13日" />
+				<TextView android:id="@+id/tvActionDtlEndTime"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#FFFFFF" android:text="19:50" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:layout_alignParentRight="true">
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="已有" />
+				<TextView android:id="@+id/tvActionDtlNumber"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="12" android:textColor="#4fae41" />
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="人参与" />
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="3dp"
+				android:orientation="vertical">
+				<TextView android:id="@+id/tvActionRank"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="我的名次:第5名" android:visibility="gone" />
+				<Button android:id="@+id/btnActionDtlJoin"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:background="@drawable/actions_join" android:textColor="#4eac41"
+					android:textSize="20sp" android:text="参与" />
+			</LinearLayout>
+		</LinearLayout>
+		<TextView android:id="@+id/tvActionDtlAddress"
+			android:layout_width="150dp" android:layout_height="wrap_content"
+			android:layout_below="@id/lytAcTips" android:singleLine="true"
+			android:text="沈阳市高新区浑河路" />
+	</RelativeLayout>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="活动成员:"
+		android:textColor="#FFFFFF" android:layout_marginTop="5dp"
+		android:layout_marginLeft="20dp" />
+
+
+	<LinearLayout android:layout_height="fill_parent"
+		android:layout_width="fill_parent" android:layout_marginTop="8dp"
+		android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+		android:layout_marginBottom="8dp" android:background="@drawable/layout_black_bg"
+		android:orientation="vertical">
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="用户"
+				android:textSize="15sp" android:textColor="#FFFFFF"
+				android:layout_marginLeft="5dp" />
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="卡路里"
+				android:textSize="15sp" android:textColor="#FFFFFF"
+				android:layout_alignParentRight="true" android:layout_marginRight="5dp" />
+
+		</RelativeLayout>
+
+		<ListView android:id="@+id/lvActionContent"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:cacheColorHint="@android:color/transparent"
+			android:fadingEdge="none" android:divider="@drawable/list_line"
+			android:dividerHeight="2dp" />
+
+	</LinearLayout>
+</LinearLayout>

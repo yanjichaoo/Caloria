@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:axis="http://schemas.android.com/apk/res/com.xikang.calorie.activity"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center_horizontal"
+	android:background="@drawable/main_frame_bg">
+	<include android:id="@+id/tbMB" layout="@layout/layout_title_bar" />
+	<LinearLayout android:id="@+id/lytMB" android:orientation="vertical"
+		android:background="@drawable/layout_black_bg" style="@style/setting_layout_bg"
+		android:layout_below="@id/tbMB">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_horizontal">
+				<TextView android:id="@+id/tvMBWeightTips"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="@string/BMI_normal_weight" android:textSize="20sp"
+					android:textColor="@color/white" />
+				<TextView android:id="@+id/tvMBWeightValue"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textSize="15sp" android:textColor="@color/white"
+					android:layout_marginLeft="5dp" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:gravity="center" android:layout_marginTop="5dp">
+			<TextView style="@style/bmi_text1" android:text="@string/BMI_string_1" />
+			<TextView android:id="@+id/tvMBWeightCurrent"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="22.4" android:textSize="15sp" />
+			<TextView style="@style/bmi_text1" android:text="@string/BMI_string_2" />
+			<TextView android:id="@+id/tvMBWeightIdealize"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="65.5" android:textSize="15sp" />
+			<TextView style="@style/bmi_text1" android:text="@string/BMI_string_3" />
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content">
+				<TextView style="@style/bmi_text1" android:text="@string/BMI_string_7" />
+				<TextView android:id="@+id/tvMBCurrentHeight" style="@style/bmi_text2" android:text="1.78"/>
+				<TextView style="@style/bmi_text1" android:text="@string/BMI_string_9" />
+			</LinearLayout>
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_marginLeft="10dp">
+				<TextView style="@style/bmi_text1" android:text="@string/BMI_string_8" />
+				<TextView android:id="@+id/tvMBCurrentWeight" style="@style/bmi_text2" android:text="65.5"/>
+				<TextView style="@style/bmi_text1" android:text="@string/BMI_string_3" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<RelativeLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/main_bmi_axis_bg"
+			android:layout_centerInParent="true" android:paddingLeft="10dp" >
+			<TextView android:id="@+id/tvMBHeight" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_alignParentTop="true"
+				android:textColor="#99cc00" android:textSize="10sp" android:text="@string/BMI_string_10"
+				android:layout_marginTop="30dp" android:layout_marginLeft="20dp"/>
+			<com.xikang.calorie.view.AxisView
+				android:id="@+id/avMB" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_below="@id/tvMBHeight" />
+			<ImageView android:id="@+id/ivMBPerson"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignBottom="@id/avMB" android:layout_marginBottom="80dp"
+				android:layout_alignLeft="@id/avMB" android:layout_marginLeft="100dp" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_toRightOf="@id/avMB"
+				android:layout_alignBottom="@id/avMB" android:textColor="#99cc00"
+				android:layout_marginBottom="40dp" android:textSize="10sp"
+				android:text="@string/BMI_string_11" />
+		</RelativeLayout>
+	</RelativeLayout>
+</LinearLayout>

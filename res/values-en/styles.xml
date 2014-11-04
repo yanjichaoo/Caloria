@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<style name="Theme.CustomDialog" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:padding">10dip</item>
+	</style>
+
+	<style name="setting_layout_bg">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginLeft">20dip</item>
+		<item name="android:layout_marginRight">20dip</item>
+		<item name="android:layout_marginTop">15dip</item>
+	</style>
+	<style name="setting_layout_line">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@drawable/layout_white_line</item>
+	</style>
+	<style name="setting_layout">
+		<item name="android:background">@drawable/layout_white_selector</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:paddingTop">5dip</item>
+		<item name="android:paddingBottom">5dip</item>
+		<item name="android:paddingLeft">10dip</item>
+		<item name="android:paddingRight">10dip</item>
+	</style>
+
+	<style name="setting_layout_left">
+		<item name="android:textColor">@drawable/setting_layout_left_selector</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">left|center_vertical</item>
+	</style>
+	<style name="setting_layout_text">
+		<item name="android:layout_gravity">right|center_vertical</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">#377d00</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:layout_marginRight">20dip</item>
+	</style>
+	<style name="setting_layout_right">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">right|center_vertical</item>
+	</style>
+	<style name="setting_login_tr">
+		<item name="android:gravity">center</item>
+		<item name="android:layout_marginTop">10dip</item>
+	</style>
+	<style name="setting_login_text">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">17sp</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:layout_gravity">right|center_vertical</item>
+	</style>
+	<style name="setting_login_edit">
+		<item name="android:background">@drawable/setting_logined_edit_selector</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">35dip</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textColor">@drawable/setting_edit_color</item>
+		<item name="android:layout_marginRight">5dip</item>
+		<item name="android:layout_marginLeft">5dip</item>
+	</style>
+	<style name="setting_login_button">
+		<item name="android:background">@drawable/setting_login_bt_selector</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">40dip</item>
+		<item name="android:textSize">17sp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+
+	<style name="setting_remind_sliderbox">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_centerVertical">true</item>
+	</style>
+
+	<style name="setting_remind_text">
+		<item name="android:textColor">@drawable/setting_layout_left_selector</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:singleLine">false</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">left|center_vertical</item>
+		<item name="android:layout_marginRight">5dip</item>
+	</style>
+
+	<style name="bmi_text1">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">13sp</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+	<style name="bmi_text2">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">#66cc33</item>
+	</style>
+	<style name="title_btn_text">
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+	<style name="top_item_all_layout">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginLeft">15dip</item>
+		<item name="android:layout_marginRight">15dip</item>
+		<item name="android:layout_marginTop">20dip</item>
+		<item name="android:layout_gravity">center_horizontal</item>
+	</style>
+	<style name="top_item_title">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:layout_marginLeft">5dip</item>
+	</style>
+	<style name="top_item_content_layout">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@drawable/list_bg</item>
+		<item name="android:weightSum">10</item>
+	</style>
+	<style name="top_item_content_left_layout">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center_vertical</item>
+		<item name="android:layout_weight">6.5</item>
+		<item name="android:layout_marginLeft">5dip</item>
+	</style>
+	<style name="top_item_content_left_ranking_layout">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:layout_centerHorizontal">true</item>
+	</style>
+	<style name="top_item_content_left_ranking_text">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">#5ab017</item>
+		<item name="android:textSize">15sp</item>
+	</style>
+	<style name="top_item_content_left_ranking_img">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:src">@drawable/rank_left</item>
+		<item name="android:layout_gravity">center_vertical</item>
+		<item name="android:layout_marginLeft">3dip</item>
+	</style>
+	<style name="top_item_content_left_ranking_change_text">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">2dip</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">10sp</item>
+	</style>
+	<style name="top_item_content_cut">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:background">@drawable/rank_line</item>
+	</style>
+	<style name="top_item_content_right_layout">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center_vertical</item>
+		<item name="android:layout_weight">3.5</item>
+		<item name="android:layout_marginLeft">5dip</item>
+		<item name="android:layout_marginRight">30dip</item>
+	</style>
+	<style name="top_item_content_right_text">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">13sp</item>
+	</style>
+
+	<style name="rankchart_lefttext_rank">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center</item>
+	</style>
+	<style name="rankt_relativeLayout_tip">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_marginRight">25dip</item>
+		<item name="android:layout_marginLeft">10dip</item>
+		<item name="android:layout_marginTop">20dip</item>
+	</style>
+	<style name="rank_chart_top_text">
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+	<style name="tip_layout_bg">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginLeft">10dip</item>
+		<item name="android:layout_marginRight">10dip</item>
+		<item name="android:layout_marginTop">10dip</item>
+		<item name="android:layout_marginBottom">10dip</item>
+	</style>
+</resources>

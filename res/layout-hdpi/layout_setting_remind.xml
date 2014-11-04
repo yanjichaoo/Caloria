@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:sliderBox="http://schemas.android.com/apk/res/com.xikang.calorie.activity"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center_horizontal"
+	android:background="@drawable/main_frame_bg">
+	<include layout="@layout/layout_title_bar" />
+	<LinearLayout android:orientation="vertical"
+		android:background="@drawable/layout_white_bg" style="@style/setting_layout_bg">
+		<RelativeLayout android:id="@+id/lytRemindMorning"
+			style="@style/setting_layout">
+			<TextView android:id="@+id/tvRemindIsMorning"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#377d00" android:textSize="15sp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true" />
+			<TextView android:id="@+id/tvRemindMorning" style="@style/setting_remind_text"
+				android:layout_toLeftOf="@id/tvRemindIsMorning" />
+		</RelativeLayout>
+		<LinearLayout style="@style/setting_layout_line" />
+		<RelativeLayout android:id="@+id/lytRemindNoon" style="@style/setting_layout">
+			<TextView android:id="@+id/tvRemindIsNoon"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#377d00" android:textSize="15sp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true" />
+			<TextView android:id="@+id/tvRemindNoon" style="@style/setting_remind_text"
+				android:layout_toLeftOf="@id/tvRemindIsNoon" />
+		</RelativeLayout>
+		<LinearLayout style="@style/setting_layout_line" />
+		<RelativeLayout android:id="@+id/lytRemindNight" style="@style/setting_layout">
+			<TextView android:id="@+id/tvRemindIsNight"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#377d00" android:textSize="15sp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true" />
+			<TextView android:id="@+id/tvRemindNight" style="@style/setting_remind_text"
+				android:layout_toLeftOf="@id/tvRemindIsNight" />
+		</RelativeLayout>
+	</LinearLayout>
+	<LinearLayout style="@style/setting_layout_bg"
+		android:background="@drawable/layout_white_bg">
+		<FrameLayout android:id="@+id/lytRemindSynData" style="@style/setting_layout">
+			<TextView style="@style/setting_layout_left" android:text="@string/setting_remind_syn_tilte" />
+			<ImageView style="@style/setting_layout_right" android:src="@drawable/main_setting_layout_down" />
+		</FrameLayout>
+	</LinearLayout>
+</LinearLayout>

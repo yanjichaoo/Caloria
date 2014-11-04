@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<include layout="@layout/layout_title_bar" />
+	<LinearLayout android:layout_width="match_parent"
+		android:id="@+id/top_layout" android:layout_height="wrap_content"
+		android:orientation="vertical" android:background="@drawable/layout_black_bg"
+		android:layout_margin="20dp" android:layout_gravity="center">
+		<TextView android:text="TextView" android:id="@+id/txnosportday"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="center"></TextView>
+		<TextView android:id="@+id/txfattitle" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center"></TextView>
+		<TextView android:id="@+id/txfattip" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center"></TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@drawable/chart_bg"
+		android:layout_margin="20dp" android:orientation="vertical">
+		<LinearLayout android:layout_width="match_parent"
+			android:id="@+id/bittonlayout" android:layout_height="wrap_content"
+			android:weightSum="3">
+			<Button android:text="@string/calorieChartType1" android:id="@+id/btn_chart_week"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:background="@drawable/btn_chart_over"
+				android:textColor="@color/black" android:layout_marginLeft="6dp"
+				android:layout_marginRight="6dp"></Button>
+			<Button android:text="@string/calorieChartType2" android:id="@+id/btn_chart_month"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:background="@drawable/btn_chart"
+				android:textColor="@color/white" android:layout_marginLeft="6dp"
+				android:layout_marginRight="6dp"></Button>
+			<Button android:text="@string/calorieChartType3" android:id="@+id/btn_chart_quarter"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:background="@drawable/btn_chart"
+				android:textColor="@color/white" android:layout_marginLeft="6dp"
+				android:layout_marginRight="6dp"></Button>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:id="@+id/chartlayout" android:layout_height="fill_parent"></LinearLayout>
+	</LinearLayout>
+</LinearLayout>

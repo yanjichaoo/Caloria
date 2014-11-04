@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 设置页UI -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:sliderBox="http://schemas.android.com/apk/res/com.xikang.calorie.activity"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center_horizontal">
+	<include layout="@layout/layout_title_bar" />
+	<LinearLayout android:orientation="vertical"
+		android:background="@drawable/layout_white_bg" style="@style/setting_layout_bg">
+		<!-- 关于应用 -->
+		<FrameLayout android:id="@+id/lyMSAppAbout" style="@style/setting_layout">
+			<TextView style="@style/setting_layout_left" android:text="@string/setting_layout_introduce" />
+			<ImageView style="@style/setting_layout_right" android:src="@drawable/main_setting_layout_right" />
+		</FrameLayout>
+		<LinearLayout style="@style/setting_layout_line" />
+		<!-- 账户管理 -->
+		<FrameLayout android:id="@+id/lyMSAccount" style="@style/setting_layout">
+			<TextView style="@style/setting_layout_left" android:text="@string/setting_layout_account" />
+			<TextView android:id="@+id/tvMSAccount" style="@style/setting_layout_text"
+				android:text="@string/setting_account_login" />
+			<ImageView style="@style/setting_layout_right" android:src="@drawable/main_setting_layout_right" />
+		</FrameLayout>
+		<LinearLayout style="@style/setting_layout_line" />
+		<!-- 个人档案 -->
+		<FrameLayout android:id="@+id/lyMSProfile" style="@style/setting_layout">
+			<TextView android:id="@+id/tvMSLeftProfile" style="@style/setting_layout_left"
+				android:text="@string/setting_layout_profile" />
+			<ImageView style="@style/setting_layout_right" android:src="@drawable/main_setting_layout_right" />
+		</FrameLayout>
+		<LinearLayout style="@style/setting_layout_line" />
+
+		<!-- 运动提醒 -->
+		<FrameLayout android:id="@+id/lyMSRemind" style="@style/setting_layout">
+
+			<TextView android:id="@+id/tvMSLeftRemind" style="@style/setting_layout_left"
+				android:text="@string/setting_layout_remind" />
+			<TextView android:id="@+id/tvMSRemind" style="@style/setting_layout_text" />
+			<ImageView style="@style/setting_layout_right" android:src="@drawable/main_setting_layout_right" />
+		</FrameLayout>
+	</LinearLayout>
+</LinearLayout>

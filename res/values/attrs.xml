@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="PercentView">
+		<attr name="textColor" format="color" />
+		<attr name="titleTextSize" format="dimension" />
+		<attr name="calorieTextSize" format="dimension" />
+		<attr name="title" format="string" />
+		<attr name="calorie" format="string" />
+		<attr name="calorieTarget" format="string" />
+		<attr name="unit" format="string" />
+	</declare-styleable>
+	<declare-styleable name="AxisView">
+		<attr name="seekTextSize" format="dimension" />
+		<attr name="currentTextSize" format="dimension" />
+		<attr name="ponitTextSize" format="dimension" />
+		<attr name="paddingLeftTextY" format="dimension" />
+		<attr name="paddingTopTextX" format="dimension" />
+	</declare-styleable>
+	<declare-styleable name="SliderBox">
+		<attr name="sliderTextSize" format="dimension" />
+		<attr name="sliderCheckOn" format="string" />
+		<attr name="sliderCheckOff" format="string" />
+		<attr name="sliderIsCheck" format="boolean" />
+	</declare-styleable>
+	<declare-styleable name="DragView">
+		<attr name="dragHeight" format="dimension" />
+		<attr name="dragWidth" format="dimension" />
+	</declare-styleable>
+</resources>

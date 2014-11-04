@@ -1,0 +1,570 @@
+/* ==================================================
+ * 产品名: 卡路里消耗管理
+ * 文件名: XmlOpe.java
+ * --------------------------------------------------
+ * 开发环境: JDK1.6
+ * --------------------------------------------------
+ * 修订履历  2011/06/13  REV.  备注
+ *         2011/06/13  1.00  初版发行
+ * --------------------------------------------------
+ * (C) Copyright XIKANG CORPORATION 2011 All Rights Reserved.
+ */
+
+package com.xikang.calorie.xml;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import android.content.Context;
+import android.text.format.Time;
+
+import com.xikang.calorie.common.NetOpe;
+import com.xikang.calorie.domain.ActionLines;
+import com.xikang.calorie.domain.Actions;
+import com.xikang.calorie.domain.ActionsDetails;
+import com.xikang.calorie.domain.City;
+import com.xikang.calorie.domain.HistoryCalorieData;
+import com.xikang.calorie.domain.HistoryDistanceData;
+import com.xikang.calorie.domain.Line;
+import com.xikang.calorie.domain.ProfileInfo;
+import com.xikang.calorie.domain.RankVO;
+import com.xikang.calorie.domain.Remind;
+import com.xikang.calorie.domain.TodaySportInfo;
+import com.xikang.calorie.domain.UserInfo;
+
+public class XmlOpe {
+
+	private static final String HTTPS_ADDRESS = "https://sports.xikang.com/LWDataExchange";
+	private static final String HTTP_ADDRESS = "http://sports.xikang.com/LWDataExchange";
+
+	private Context mContext;
+
+	public XmlOpe(Context context) {
+		mContext = context;
+	}
+
+	/**
+	 * 时间戳获取
+	 * 
+	 * 修订履历：2011/08/01 张荣 初版
+	 * 
+	 * @param 无
+	 * @return 时间戳字符串
+	 */
+
+	public static String getTimeStamp() {
+		Time t = new Time();
+		t.setToNow();
+		String timeStamp = String.valueOf(t.year).concat("-").concat(String.valueOf(t.month)).concat("-")
+				.concat(String.valueOf(t.monthDay)).concat(" ").concat(String.valueOf(t.hour)).concat(":")
+				.concat(String.valueOf(t.minute)).concat(":").concat(String.valueOf(t.second));
+
+		return timeStamp;
+	}
+
+	/**
+	 * 设置个人信息
+	 * 
+	 * 修订履历：2011/08/10 曲磊 修改结构
+	 * 
+	 * @param personId
+	 * @param profileInfo
+	 * @return
+	 */
+	public String setProfileInfo(String personId, ProfileInfo profileInfo) {
+
+		UserBasicInfoSetXmlParser mUserBasicInfoSetXmlParser = new UserBasicInfoSetXmlParser(mContext);
+		try {
+			Map<String, String> mapUrl = new HashMap<String, String>();
+			mapUrl.put("type", "lm");
+			mapUrl.put("requestData", mUserBasicInfoSetXmlParser.buildXML(personId, profileInfo));
+			String writeBack = NetOpe.requestPost(HTTPS_ADDRESS, mapUrl, 30);
+			return mUserBasicInfoSetXmlParser.parseXml(writeBack);
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	/**
+	 * 用户登录
+	 * 
+	 * 修订履历：2011/08/10 曲磊 修改结构
+	 * 
+	 * @param userInfo
+	 * @return
+	 */
+	public Map<String, String> loginUser(UserInfo userInfo) {
+		UserLoginXmlParser mUserLoginXmlParser = new UserLoginXmlParser(mContext);
+		try {
+			Map<String, String> mapUrl = new HashMap<String, String>();
+			mapUrl.put("type", "lm");
+			mapUrl.put("requestData", mUserLoginXmlParser.buildXML(userInfo));
+			String writeBack = NetOpe.requestPost(HTTPS_ADDRESS, mapUrl, 30);
+			return mUserLoginXmlParser.parseXml(writeBack);
+
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	/**
+	 * 获取账户信息
+	 * 
+	 * 修订履历：2011/08/10 曲磊 修改结构
+	 * 
+	 * @param personId
+	 * @return
+	 */
+	public UserInfo getUserInfo(String personId) {
+		UserProfileXmlParser mUserProfileXmlParser = new UserProfileXmlParser(mContext);
+		try {
+			Map<String, String> mapUrl = new HashMap<String, String>();
+			mapUrl.put("type", "lm");
+			mapUrl.put("requestData", mUserProfileXmlParser.buildXML(personId));
+			String writeBack = NetOpe.requestPost(HTTPS_ADDRESS, mapUrl, 30);
+			return mUserProfileXmlParser.parseXml(writeBack);
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	/**
+	 * 获取个人信息
+	 * 
+	 * 修订履历：2011/08/10 曲磊 修改结构
+	 * 
+	 * @param personId
+	 * @return
+	 */
+	public ProfileInfo getProfileInfo(String personId) {
+		UserBasicInfoXmlParser mGetUserBasicInfoXml = new UserBasicInfoXmlParser(mContext);
+		try {
+			Map<String, String> mapUrl = new HashMap<String, String>();
+			mapUrl.put("type", "lm");
+			mapUrl.put("requestData", mGetUserBasicInfoXml.buildXML(personId));
+			String writeBack = NetOpe.requestPost(HTTPS_ADDRESS, mapUrl, 30);
+			return mGetUserBasicInfoXml.parseXml(writeBack);
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	/**
+	 * 注册用户
+	 * 
+	 * 修订履历：2011/08/10 曲磊 修改结构
+	 * 
+	 * @param userInfo
+	 * @return
+	 */
+	public Map<String, String> registerUser(UserInfo userInfo) {
+		UserRegisterXmlParser mUserRegisterXmlParser = new UserRegisterXmlParser(mContext);
+		try {
+			Map<String, String> mapUrl = new HashMap<String, String>();
+			mapUrl.put("type", "lm");
+			mapUrl.put("requestData", mUserRegisterXmlParser.buildXML(userInfo));
+			String writeBack = NetOpe.requestPost(HTTPS_ADDRESS, mapUrl, 30);
+			return mUserRegisterXmlParser.parseXml(writeBack);
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	/**
+	 * 
+	 * 设置账户信息
+	 * 
+	 * 修订履历：2011/08/10 曲磊 修改结构
+	 * 
+	 * @param userInfo
+	 * @return
+	 */
+	public boolean setUserInfo(UserInfo userInfo) {
+		UserProfileSetXmlParser mUserProfileSetXmlParser = new UserProfileSetXmlParser(mContext);
+		try {
+			Map<String, String> mapUrl = new HashMap<String, String>();
+			mapUrl.put("type", "lm");
+			mapUrl.put("requestData", mUserProfileSetXmlParser.buildXML(userInfo));
+			String writeBack = NetOpe.requestPost(HTTPS_ADDRESS, mapUrl, 30);
+			return mUserProfileSetXmlParser.parseXml(writeBack);
+		} catch (Exception e) {
+			return false;
+		}
+	}
+
+	/**
+	 * 获取城市信息
+	 * 
+	 * @return
+	 */
+	public List<City> loadCityData() {
+		AreaXmlParser mAreaXmlParser = new AreaXmlParser(mContext);
+		try {
+			Map<String, String> mapUser = new HashMap<String, String>();
+			mapUser.put("type", "lm");
+			mapUser.put("requestData", mAreaXmlParser.buildXML());
+			String writeBack = NetOpe.requestPost(HTTP_ADDRESS, mapUser, 10);
+			return AreaXmlParser.parseXml(writeBack);
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	/**
+	 * 获取提醒基本信息
+	 * 
+	 * @param persionId
+	 * @return
+	 */
+	public Map<String, String> getRemindInfo(String persionId) {
+		RemindConfGetXmlParser mRemindConfGetXmlParser = new RemindConfGetXmlParser(mContext);
+		try {
+			Map<String, String> mapUrl = new HashMap<String, String>();
+			mapUrl.put("type", "lm");
+			mapUrl.put("requestData", mRemindConfGetXmlParser.buildXML(persionId));
+			String writeBack = NetOpe.requestPost(HTTP_ADDRESS, mapUrl, 30);
+			return mRemindConfGetXmlParser.parseInfoXml(writeBack);
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	/**
+	 * 获取提醒配置信息
+	 * 
+	 * @param persionId
+	 * @return
+	 */
+	public List<Remind> getRemindConf(String persionId) {
+		RemindConfGetXmlParser mRemindConfGetXmlParser = new RemindConfGetXmlParser(mContext);
+		try {
+			Map<String, String> mapUrl = new HashMap<String, String>();
+			mapUrl.put("type", "lm");
+			mapUrl.put("requestData", mRemindConfGetXmlParser.buildXML(persionId));
+			String writeBack = NetOpe.requestPost(HTTP_ADDRESS, mapUrl, 30);
+			return mRemindConfGetXmlParser.parseConfXml(writeBack);
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	/**
+	 * 设置提醒信息
+	 * 
+	 * @param personId
+	 * @param remind
+	 * @return
+	 */
+	public String setRemindConf(String personId, List<Remind> list) {
+		RemindConfSetXmlParser mRemindConfSetXmlParser = new RemindConfSetXmlParser(mContext);
+		try {
+			Map<String, String> mapUrl = new HashMap<String, String>();
+			mapUrl.put("type", "lm");
+			mapUrl.put("requestData", mRemindConfSetXmlParser.buildXML(personId, list));
+			String writeBack = NetOpe.requestPost(HTTPS_ADDRESS, mapUrl, 30);
+			return mRemindConfSetXmlParser.parseXml(writeBack);
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	public Map<String, String> getRemindMsg(String personId, String currentTime) {
+		RemindMsgXmlParser mRemindMsgXmlParser = new RemindMsgXmlParser(mContext);
+		try {
+			Map<String, String> mapUrl = new HashMap<String, String>();
+			mapUrl.put("type", "lm");
+			mapUrl.put("requestData", mRemindMsgXmlParser.buildXML(personId, currentTime));
+			String writeBack = NetOpe.requestPost(HTTP_ADDRESS, mapUrl, 30);
+			return mRemindMsgXmlParser.parseXml(writeBack);
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	/**
+	 * 获取排行信息
+	 * 
+	 * @param personId
+	 * @param rankCount
+	 * @return 排行信息
+	 */
+	public List<RankVO> getRankList(String personId, String rankCount) {
+		List<RankVO> rankList = null;
+		SportRankXmlParser getXml = new SportRankXmlParser(mContext);
+		try {
+			Map<String, String> mapRank = new HashMap<String, String>();
+			mapRank.put("type", "lm");
+			mapRank.put("requestData", getXml.buildXML(personId, rankCount));
+			rankList = getXml.parseXml(NetOpe.requestPost(HTTP_ADDRESS, mapRank, 10));
+		} catch (Exception e) {
+		}
+		return rankList;
+	}
+
+	/**
+	 * 获取历史汇总信息
+	 * 
+	 * @param context personId phoneId
+	 * @return 历史汇总信息
+	 */
+	public Map<String, String> getHistorySummary(String personId) {
+		HistoryXmlParser getXml = new HistoryXmlParser(mContext);
+		try {
+			Map<String, String> mapRank = new HashMap<String, String>();
+			mapRank.put("type", "lm");
+			mapRank.put("requestData", getXml.buildSummaryXML(personId));
+			return getXml.parseSummaryXml(NetOpe.requestPost(HTTP_ADDRESS, mapRank, 10));
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	/**
+	 * 获取运动称号
+	 * 
+	 * @param 无
+	 * @return 运动称号
+	 */
+	public List<Map<String, String>> getSportTitleList() {
+		SportTitleXmlParser getXml = new SportTitleXmlParser(mContext);
+		try {
+			Map<String, String> mapRank = new HashMap<String, String>();
+			mapRank.put("type", "lm");
+			mapRank.put("requestData", getXml.buildSummaryXML());
+			return getXml.parseSummaryXml(NetOpe.requestPost(HTTP_ADDRESS, mapRank, 3));
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	/**
+	 * 获取历史卡路里信息
+	 * 
+	 * @param 天数
+	 * @return 历史卡路里信息
+	 */
+	public HistoryCalorieData getHistoryCalorie(String personId, int daynum) {
+		HistoryXmlParser getXml = new HistoryXmlParser(mContext);
+
+		try {
+			Calendar cal = Calendar.getInstance();
+			cal.add(Calendar.DAY_OF_YEAR, daynum);
+			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+			Map<String, String> mapRank = new HashMap<String, String>();
+			mapRank.put("type", "lm");
+			mapRank.put("requestData",
+					getXml.buildHistoryColarieDataXML(personId, format.format(cal.getTime()), format.format(new Date())));
+			return getXml.parseHistoryCalorieXml(NetOpe.requestPost(HTTP_ADDRESS, mapRank, 3));
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	/**
+	 * 获取历史时间信息
+	 * 
+	 * @param 无
+	 * @return 历史时间信息
+	 */
+	public Map<String, String> getHistoryTime(String persionId) {
+		HistoryXmlParser getXml = new HistoryXmlParser(mContext);
+		try {
+			Map<String, String> mapRank = new HashMap<String, String>();
+			mapRank.put("type", "lm");
+			mapRank.put("requestData", getXml.buildHistoryTimeDataXML(persionId));
+			return getXml.parseHistoryTimeXml(NetOpe.requestPost(HTTP_ADDRESS, mapRank, 3));
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	/**
+	 * 获取历史距离信息
+	 * 
+	 * @param 天数
+	 * @return 历史距离信息
+	 */
+	public HistoryDistanceData getHistoryDistance(String personId, int daynum) {
+		HistoryXmlParser getXml = new HistoryXmlParser(mContext);
+
+		try {
+			Calendar cal = Calendar.getInstance();
+			cal.add(Calendar.DAY_OF_YEAR, daynum);
+			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+			Map<String, String> mapRank = new HashMap<String, String>();
+			mapRank.put("type", "lm");
+			mapRank.put("requestData",
+					getXml.buildHistoryDistanceDataXML(personId, format.format(cal.getTime()), format.format(new Date())));
+			return getXml.parseHistoryDistanceXml(NetOpe.requestPost(HTTP_ADDRESS, mapRank, 3));
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	/**
+	 * 获取今日运动信息
+	 * 
+	 * @param personID
+	 * @param fetchTipContent
+	 * 
+	 * @return 今日运动信息
+	 */
+	public TodaySportInfo getTodaySportInfo(String personID, String fetchTipContent) {
+		TodaySportInfoXmlParser mTodaySportInfoXmlParser = new TodaySportInfoXmlParser(mContext);
+		try {
+			Map<String, String> mapRequest = new HashMap<String, String>();
+			mapRequest.put("type", "lm");
+			mapRequest.put("requestData", mTodaySportInfoXmlParser.buildXML(personID, fetchTipContent));
+			String writeBack = NetOpe.requestPost(HTTP_ADDRESS, mapRequest, 10);
+			TodaySportInfo todaySportInfo = mTodaySportInfoXmlParser.parseXml(writeBack);
+			return todaySportInfo;
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	/**
+	 * ==============================曲磊=======================
+	 */
+
+	private static final String ACTION_ADDRESS = "http://www.xikang.com/datainterface/activity?type=lm&requestData=";
+	private static final String ACTION_MAP_ADDRESS = "http://www.xikang.com/datainterface/map?type=lm&requestData=";
+
+	public List<Actions> getHotActionGetData(String personId, String cityCode) {
+		ActionsGetDataXmlParser mActionsGetDataXmlParser = new ActionsGetDataXmlParser(mContext);
+		try {
+			String result = java.net.URLEncoder.encode(mActionsGetDataXmlParser.buildHotActionsXML(personId, cityCode));
+			StringBuffer sb = new StringBuffer();
+			sb.append(ACTION_ADDRESS).append(result);
+			String writeBack = NetOpe.requestGet(sb.toString(), 30);
+			List<Actions> actionsList = mActionsGetDataXmlParser.parseXml(writeBack);
+			return actionsList;
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	public List<Actions> getMyActionGetData(String personId) {
+		ActionsGetDataXmlParser mActionsGetDataXmlParser = new ActionsGetDataXmlParser(mContext);
+		try {
+			String result = java.net.URLEncoder.encode(mActionsGetDataXmlParser.buildMyActionsXML(personId));
+			StringBuffer sb = new StringBuffer();
+			sb.append(ACTION_ADDRESS).append(result);
+			String writeBack = NetOpe.requestGet(sb.toString(), 30);
+			List<Actions> actionsList = mActionsGetDataXmlParser.parseXml(writeBack);
+			return actionsList;
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	public ActionsDetails getActionsDetailsGetData(String personId, String routeIdx) {
+		ActionsDetailsXmlParser mActionsDetailsXmlParser = new ActionsDetailsXmlParser(mContext);
+		try {
+			String result = java.net.URLEncoder.encode(mActionsDetailsXmlParser.buildActionsDetailsXML(personId, routeIdx));
+			StringBuffer sb = new StringBuffer();
+			sb.append(ACTION_ADDRESS).append(result);
+			String writeBack = NetOpe.requestGet(sb.toString(), 30);
+			ActionsDetails actionDetails = mActionsDetailsXmlParser.parseXml(writeBack);
+			return actionDetails;
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	public boolean joinActions(String personId, String lineId) {
+		ActionsJoinXmlParser mActionsJoinXmlParser = new ActionsJoinXmlParser(mContext);
+		try {
+			String result = java.net.URLEncoder.encode(mActionsJoinXmlParser.buildXML(personId, lineId));
+			StringBuffer sb = new StringBuffer();
+			sb.append(ACTION_ADDRESS).append(result);
+			String writeBack = NetOpe.requestGet(sb.toString(), 30);
+			return mActionsJoinXmlParser.parseXml(writeBack);
+		} catch (Exception e) {
+			return false;
+		}
+	}
+
+	/**
+	 * ==============================曲磊=======================
+	 */
+	public ActionLines getActionGetLines(String personId, String citycode) {
+		ActionsGetLinesXmlParser mActionsGetLinesXmlParser = new ActionsGetLinesXmlParser(mContext);
+		try {
+			String result = java.net.URLEncoder.encode(mActionsGetLinesXmlParser.buildActionGetLinesXML(personId, citycode));
+			StringBuffer sb = new StringBuffer();
+			sb.append(ACTION_MAP_ADDRESS).append(result);
+
+			String writeBack = NetOpe.requestGet(sb.toString(), 30);
+			ActionLines lines = mActionsGetLinesXmlParser.parseXml(writeBack);
+
+			return lines;
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	public List<Line> getActionGetLinesList(String personId) {
+		ActionsGetLinesListXmlParser mActionsGetLinesListXmlParser = new ActionsGetLinesListXmlParser(mContext);
+		try {
+			String result = java.net.URLEncoder.encode(mActionsGetLinesListXmlParser.buildActionGetLinesListXML(personId));
+
+			StringBuffer sb = new StringBuffer();
+			sb.append(ACTION_MAP_ADDRESS).append(result);
+			String writeBack = NetOpe.requestGet(sb.toString(), 30);
+			List<Line> lines = mActionsGetLinesListXmlParser.parseXml(writeBack);
+
+			return lines;
+
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	public boolean setActionRouteStatus(String personId, String lineId, String status) {
+		ActionsSettingXmlParser mActionsSettingXmlParser = new ActionsSettingXmlParser(mContext);
+		try {
+			if (lineId == null) {
+				System.out.println("if");
+			} else {
+				System.out.println("else");
+			}
+			String result = java.net.URLEncoder.encode(mActionsSettingXmlParser.buildActionSettingXML(personId, lineId, status));
+
+			StringBuffer sb = new StringBuffer();
+
+			sb.append(ACTION_MAP_ADDRESS).append(result);
+			String writeBack = NetOpe.requestGet(sb.toString(), 30);
+			boolean flag = mActionsSettingXmlParser.parseXml(writeBack);
+
+			return flag;
+		} catch (Exception e) {
+
+			System.out.println(e.toString());
+			return false;
+		}
+	}
+
+	public Line getActionGetSelectRoute(String personId, String lineId) {
+		ActionsGetSelectRouteXmlParser mActionsGetSelectRouteXmlParser = new ActionsGetSelectRouteXmlParser(mContext);
+		try {
+			String result = java.net.URLEncoder.encode(mActionsGetSelectRouteXmlParser.buildActionsGetSelectRouteXML(personId,
+					lineId));
+			StringBuffer sb = new StringBuffer();
+			sb.append(ACTION_MAP_ADDRESS).append(result);
+			String writeBack = NetOpe.requestGet(sb.toString(), 30);
+			Line line = mActionsGetSelectRouteXmlParser.parseXml(writeBack);
+
+			return line;
+		} catch (Exception e) {
+
+			System.out.println(e.toString());
+			return null;
+		}
+	}
+
+}

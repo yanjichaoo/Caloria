@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/view
+END
+AxisView.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/view/AxisView.java
+END
+LineChartForHistoryCalorie.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/view/LineChartForHistoryCalorie.java
+END
+CityView.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/view/CityView.java
+END
+DragView.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/view/DragView.java
+END
+BarChartForRank.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/view/BarChartForRank.java
+END
+CustomGallery.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/view/CustomGallery.java
+END
+PercentView.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/view/PercentView.java
+END
+SliderBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/view/SliderBox.java
+END
+BarChartForTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/view/BarChartForTime.java
+END
+LineChartForHistoryDistance.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/view/LineChartForHistoryDistance.java
+END

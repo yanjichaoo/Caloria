@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/main_frame_bg">
+	<include layout="@layout/layout_title_bar">
+	</include>
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" style="@style/tip_layout_bg"
+		android:background="@drawable/layout_black_bg" android:gravity="center">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<TextView android:id="@+id/tip_title" android:textSize="18sp"
+				android:layout_width="wrap_content" android:layout_gravity="center_horizontal"
+				android:layout_height="wrap_content"></TextView>
+			<TextView android:id="@+id/tip_summary" android:textSize="18sp"
+				android:layout_marginTop="10dp" android:layout_width="fill_parent"
+				android:layout_centerHorizontal="true" android:layout_height="wrap_content"></TextView>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

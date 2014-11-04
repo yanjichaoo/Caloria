@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Runner&amp;Hiker</string>
+	<string name="first_title_1">Be stronger！</string>
+	<string name="first_title_2">Unable to receive data unless the watch is bound with the app.</string>
+	<string name="first_title_3">Runner&amp;Hiker</string>
+	<string name="first_title_4">No today"'"s exercise goal.</string>
+	<string name="second_title_0">500kcal</string>
+	<string name="second_title_1">Need more rest kcal to  reach today"'"s exercise goal.</string>
+	<string name="second_title_2">Please sign up at "'"Account"'".</string>
+	<string name="second_title_3">Put your watch on and let"'"s begin today"'"s exercise.</string>
+	<string name="second_title_4">It"'"s a good beginning for today.</string>
+	<string name="second_title_5">Get closer to today"''"s goal.</string>
+	<string name="second_title_6">You almost reach today"'"s goal.</string>
+	<string name="second_title_7">Congratulations! </string>
+	<string name="second_title_8">Unable to retrive data from Xikang server.</string>
+	<string name="second_title_9">You have reached today"'"s exercise goal.</string>
+	<string name="second_title_10">Please complete your account.</string>
+	<string name="weibo_share_content">Contents：</string>
+	<string name="share_title">Share</string>
+	<string name="share_message_1">Share Succeeded.</string>
+	<string name="share_message_2">Share Failed.</string>
+	<string name="today_kcal_title">Today"'"s Calorie</string>
+	<string name="share_info">I walked step steps, accumulated  distance km. I feel great to know my today"'"s goal completed percent%. Put the watch on,let"'"s exercise together.--from XiKang Runner&amp;Hiker Android version. For details, please visit http://www.xikang.com.
+	</string>
+	<string name="clock_title">Today"'"s Calorie</string>
+	<string name="exercise_step_unit">Steps</string>
+	<string name="exercise_rate_unit"> </string>
+	<string name="exercise_distance_unit">Km</string>
+	<string name="exercise_time_unit">Minutes</string>
+	<string name="exercise_speed_unit">Km/H</string>
+	<string name="calorie_unit">Kcal</string>
+	<string name="sport_info_note1">To show today"'"s sports info,please sign in.</string>
+	<string name="sport_info_note2">To show today"'"s sports info,please complete account info.</string>
+	<string name="tip_note">Tips：</string>
+	<string name="tip_title">Tips</string>
+	<string name="weibo_title">Sina MicroBlog Sharing</string>
+	<string name="BMI_title">BMI</string>
+	<string name="BMI_string_1">BMI:</string>
+	<string name="BMI_string_2">,IBW:</string>
+	<string name="BMI_string_3">kg</string>
+	<string name="BMI_string_4">gain</string>
+	<string name="BMI_string_5">lose</string>
+	<string name="BMI_string_6">remain fit</string>
+	<string name="BMI_string_7">H:</string>
+	<string name="BMI_string_8">W:</string>
+	<string name="BMI_string_9">M</string>
+	<string name="BMI_string_10">H/M</string>
+	<string name="BMI_string_11">W/Kg</string>
+	<string name="BMI_lighter_weight">underweight</string>
+	<string name="BMI_normal_weight">healthy weight</string>
+	<string name="BMI_heavy_weight">overweight</string>
+	<string name="BMI_fat_weight">obese</string>
+	<string name="history_titile">Histroy</string>
+	<string name="setting_titile">Settings</string>
+	<string name="setting_account_login">Signed In</string>
+	<string name="setting_layout_introduce">About</string>
+	<string name="setting_layout_account">Account</string>
+	<string name="setting_layout_logined">Sign In OK!</string>
+	<string name="setting_layout_profile">Personal</string>
+	<string name="setting_layout_register">Sign Up</string>
+	<string name="setting_layout_remind">Notification</string>
+	<string name="setting_layout_remind_edit">Calorie Notification</string>
+	<string name="setting_introduce_app">Runner&amp;Hiker Intro</string>
+	<string name="setting_introduce_message1">Copyright 1998-2011 All Rights Reserved
+	</string>
+	<string name="setting_introduce_message2">Neusoft XiKang.
+	</string>
+	<string name="setting_remind_set">On</string>
+	<string name="setting_remind_close">Off</string>
+	<string name="setting_remind_whether">是否提醒</string>
+	<string name="setting_remind_sporttime">运动时间</string>
+	<string name="setting_remind_remindtime">提醒时间</string>
+	<string name="setting_remind_calories">目标卡路里</string>
+	<string name="setting_remind_repeat">重复</string>
+	<string name="setting_remind_ring">声音</string>
+	<string name="setting_remind_ring_mute">静音</string>
+	<string name="setting_remind_ring_default">默认铃音</string>
+	<string name="setting_remind_morning_info">早饭前，建议消耗@calorie千卡(@step步)一天之计在于晨，早上简单锻炼身体是有好处的。
+	</string>
+	<string name="setting_remind_noon_info">午饭后，建议消耗@calorie千卡(@step步)饭后百步走能活九十九，活动不要太剧烈哦。
+	</string>
+	<string name="setting_remind_night_info">晚饭后，建议消耗@calorie千卡(@step步)生命在于运动，晚饭后活动有益身心健康。
+	</string>
+	<string name="setting_remind_text">\@calorie千卡(@step步)</string>
+	<string name="setting_remind_text2">每日需要运动消耗@calorie千卡</string>
+	<string name="setting_remind_text3">(@calorie)千卡</string>
+	<string name="setting_layout_time_remind">运动时间提醒</string>
+	<string name="setting_layout_spacing_remind">未运动间隔提醒</string>
+	<string name="setting_remind_syn_tilte">同步提醒设置数据</string>
+	<string name="setting_remind_syn_message">确定提醒设置数据!</string>
+	<string name="setting_remind_server_error">上传服务器信息出错，请重试
+	</string>
+	<string name="setting_remind_time_range">Reminding Time is Out of Range.</string>
+	<string name="setting_register_email">AccountID:</string>
+	<string name="setting_register_pwd">Password:</string>
+	<string name="setting_register_pwd_confirm">Re-type Password:</string>
+	<string name="setting_register_watch_id">WatchID:</string>
+	<string name="setting_register_user_name">Name:</string>
+	<string name="setting_register_phone">MobileNO:</string>
+	<string name="setting_register_yesterday_sports_amount">Receive yesterday"'"s calorie notification</string>
+	<string name="setting_register_different_sports_amount">Receive calorie balance notification</string>
+	<string name="setting_register_sports_knowledge">Receive sports knowledge</string>
+	<string name="setting_register_required">*</string>
+	<string name="setting_register_info">Email/MobileNO</string>
+	<string name="profile_birthday">Birthday</string>
+	<string name="profile_sex">Sex</string>
+	<string name="profile_height">Height</string>
+	<string name="profile_weight">Weight</string>
+	<string name="profile_city">City</string>
+	<string name="profile_city_dialog_message">Are you sure to update city information list ?</string>
+	<string name="profile_targetweight">goal weight</string>
+	<string name="profile_vitality">Activity con</string>
+	<string name="profile_height_unit">cm</string>
+	<string name="profile_weight_unit">kg</string>
+	<string name="profile_progress_message_success">Update Succeeded.</string>
+	<string name="profile_progress_message_failed">Update Failed.</string>
+	<string name="setting_logined_exit">Sign Out</string>
+	<string name="setting_logined_modify">Modify</string>
+	<string name="setting_logined_dialog_message">Are you sure you want to sign out?</string>
+	<string name="setting_progress_message_loading">Loading...</string>
+	<string name="setting_progress_message_saving">Saving...</string>
+	<string name="setting_progress_message_data">Getting Data...</string>
+	<string name="setting_progress_message_data_failed">Get Data Failed.</string>
+	<string name="setting_progress_message_login">Signing In...</string>
+	<string name="setting_progress_message_register">Registering...</string>
+	<string name="setting_progress_message_norequest">Unable to send request data.</string>
+	<string name="setting_progress_message_login_noinfo">Unable to get account info.</string>
+	<string name="setting_progress_message_login_failed">Sign In Failed.</string>
+	<string name="setting_progress_message_pwd_notmatch">The two passwords you entered did not match.</string>
+	<string name="setting_progress_message_userinfo_asymmetry">The account info is incomplete.</string>
+	<string name="setting_progress_message_userinfo_empty">The personal information is incomplete.</string>
+	<string name="setting_register_message_1">Terms of Service</string>
+	<string name="setting_register_message_2"> Acknowledge</string>
+	<string name="setting_register_message_3"></string>
+	<string name="setting_register_message_4">Xikang System Terms of Service</string>
+	<string name="setting_register_message_5">
+		I. Acknowledgement &amp; Acceptance of Terms of Service 
+		\nThe Service provided to you by Shenyang Neusoft Medical Systems Co., Ltd. and its affiliated companies (&quot;Neusoft Xikang&quot;, Neusoft Xikang Network Platform is simply named &quot;Xikang System&quot;) will be strictly enforced under the terms and conditions and operating rules or policies that published by Neusoft Xikang. You must accept the Terms of Service and complete the registration so as to be a member of Neusoft Xikang. Please read the Terms of Service before your registration, when you click the button to register to become one of Xikang System"'"s members, you will agree with the following terms of service (collectively named the &quot;Service&quot;). 
+		\nII. Introduction to the Service
+		\nYou need agree with: 
+		\n1. Providing complete, true and accurate information about yourself，and promptly updating your information.
+		\n2. If you provide any information that is untrue, inaccurate, not current or incomplete， or Neusoft Xikang has reasonable grounds to suspect that such information is untrue, inaccurate, not current or incomplete, Neusoft Xikang has the right to suspend or terminate your account and refuse any and all current or future use of the Service. While you enjoy various services provided by Neusoft Xikang, you need accept other types of information services provided by Neusoft Xikang.
+		\n3. If you register with Xikang System as a company or any other legal identities, you acknowledge and warranty that you are entitled to let the same to be bound by the service agreement. 
+		\nIII. Modification of the Service
+		\nNeusoft Xikang reserves the right at any time and from time to time modify or discontinue, temporarily or permanently, the Service(or any part thereof) with a notice on the homepage. If you do not agree with the changes, you can take the initiative to abolish access to network services. Your continued use of Neusoft Xikang after changes are posted means that you agree to be legally bound by these terms as updated and/or amended. When you enjoy the service, you should read and learn the contents of the modification and you must obey the terms of service and the relevant provisions of any single service.
+		\nIV. Revision of the Service
+		\n1. Due to the particularity of the network service, you agree that Xikang System change, interrupt or stop some or the entire network service network services which be charged at any time. If the service to be changed, interrupted or stopped is free of charge, Xikang System needn"'"t inform you, also need not to be responsible for users or any other third party. If the service is taken charge, Xikang System ought to inform you before changing, interrupting or stopping, and provide alternative charge network services for the affected users. If you do not accept the alternative service, for the fees users have paid but have not consumed, Xikang System should return the rest to users in according to the actual use condition.
+		\n2. You understand, Xikang System needs to repair or maintain the service platform and related equipment regularly or irregularly. These will cause to interrupt charging network service in a reasonable period of time. In such situation, Xikang System have right to interrupt without any responsibility, but Xikang System should inform users beforehand as far as possible. 
+		\n3. If any of the following circumstances happens, Xikang System have right to interrupt or stop the network service including fees network service under the agreement without responsibility for any users or any third party:
+		\n(1) The personal data provided by you was not true;
+		\n(2) You break use rules in this terms; 
+		\n(3) When using the charging service, users did not pay the service charge to website corresponding regulation. 
+		\n(4) Xikang System reasonably thinks any other inappropriate situations. 
+		\nV. User Privacy Policies
+		\n1. You understand and accept that, in order to provide better services to you, Neusoft Xikang will collect your personal information under the circumstance that you volunteer to choose the service or to provide the information, and integrate these information. The information collected by Neusoft Xikang will be a part of Neusoft Xikang"'"s routine business files, and it"'"s possible to transfer to the succession company of Neusoft Xikang or the designated party because of transferring, mergers, acquisitions and restructuring. Neusoft Xikang will use the information collected kindly and will take general measures to guarantee information security.
+		\n2. Respecting members"'" personal privacy is a basic policy for Neusoft Xikang. Neusoft Xikang will keep secret to your information and promises to you that it will not make public, edit or reveal your registered data and something private saving in Neusoft Xikang without your permission, but you can authorize Neusoft Xikang to make public or reveal your information to the third party. Detailed contents can be seen in website protection clause (annex I), and Neusoft Xikang thinks to reveal these information necessarily unless on the basic of honest: 
+		\n(1) Abiding by the relevant laws and regulations, including when the relevant organs of the state check, we will provide the registered data, the related content, the released information content, the released time, the Internet address or domain name you wrote in Neusoft Xikang website. 
+		\n(2) To protect intellectual property and other important rights.
+		\n(3) In an emergency situation, trying the best to maintain personal and social privacy and security.
+		\n(4) According to the relevant provisions of this term or Neusoft Xikang think it necessary.
+		\nVI. Member Account, Password and Security 
+		\nYou will receive a password and account designation upon completing Neusoft Xikang Service"'"s registration process. The account and password can be used only by yourself, and you can"'"t make the password to public or provide it to the third party, and you are responsible for maintaining the confidentiality of the password and account. If the damage happens to you, Neusoft Xikang or the third party because you don"'"t keep your account and password, you are fully responsible for it. In addition, you are fully responsible for all activities that occur under your password or account. You can change your password at any time due to the notice, but if you find any illegal use of member account or security flaw, please inform Neusoft Xikang at once. 
+		\nVII. Member Management
+		\nIndependent publishing content you to assume your responsibilities. Your use of service provided by Xikang System is for all suitable laws, national laws and international legal standards.
+		\nYour commitment：
+		\n1. When releasing information in Xikang System or using Xikang System"'"s Service, you must comply with Chinese laws and regulations, not in Xikang System or use the services to produce, reproduce, publish, and disseminate the following information: 
+		\n(1) violating the basic principles established by the Constitution; 
+		\n(2) endangering national security, leaking state secrets, subverting the government, undermining national unity; 
+		\n(3) doing harm to national honor and interests; 
+		\n(4) inciting ethnic hatred and ethnic discrimination, undermining national unity; 
+		\n(5) undermining national and religious policies, promoting cults and feudal superstition; 
+		\n(6) spreading rumors, disturbing social order or undermining social stability; 
+		\n(7) spreading obscenity, pornography, gambling, violence, terror, or abetting the commission of crimes; 
+		\n(8) insulting or slandering others, infringing upon the legitimate rights and interests; 
+		\n(9) contains laws and administrative regulations other prohibited content.
+		\n2. Users in Xikang System to publish information or the use of Xikang System"'"s Service must also be consistent with other relevant countries and regions, the legal requirements, as well as the relevant provisions of international law. 
+		\n3. Don"'"t use Xikang System to do the following activities: 
+		\n(1) No-one may use computer networks or network resources without getting proper prior approval;
+		\n(2) No-one may without prior permission may change network functions or to add or delete information; 
+		\n(3) No-on may without prior permission add to, delete, or alter materials stored, processed or being transmitted through the network; 
+		\n(4) No-one may deliberately create or transmit viruses; 
+		\n(5) Other activities which harm the network are also prohibited. 
+		\n4. Do not interfere with Xikang System"'"s services in any way. 
+		\n5. You agree that you must not: 
+		\n(1) use the serve of the chain E-mail, junk e-mail or other duplicate data or information; 
+		\n(2) use the service provided by Neusoft Xikang to make false Email address, or try to mislead other members for the sender or information source in other forms. 
+		\n6. You must comply with all of the other provisions and program of Neusoft Xikang. 
+		\n7. You agree that Neusoft Xikang sends business information to your email, and you must bear legal responsibility with the mail sent by yourself. 
+		\n8. You need understand that if Xikang System finds the message obviously belonged to above content No.1, according to Chinese law, Neusoft Xikang has the obligation to stop transmission immediately, save the record, report to the relevant state authorities, and delete the address contained the message and directory or close the server.
+		\n9. Other services you use, including enterprise, business opportunities, product search, release supply and demand business opportunities, product showroom and to interactive form of Internet information release conditions provide the members of the act, shall abide by the provisions of this section also and Xikang System special service rules, released on described in section of the legal consequences and legal responsibility also apply to other service member. 
+		\nIf your behavior does not accord with above mentioned terms of service, Xikang System will make independent judgment of canceling your service immediately. 
+		\nVIII. Refused to Provide Security
+		\nYour use of the service of the network risk. Neusoft Xikang will not make any type of this guarantee, no matter how expressed or implied, but not the implicit guarantee, commercial specific purpose and appropriate assurance for restrictions not against the rules. Neusoft Xikang will not guarantee that service can satisfy your requirement, also will not guarantee that service will not be interrupted, the service timeliness, safety, error occurred as well. Neusoft Xikang will not guarantee any merchandise online shopping service or trade in Xikang System. Neusoft Xikang also won"'"t guarantee clearly that you won"'"t get oral or writing opinions or information from Neusoft Xikang.
+		\nIX. Limited Liability 
+		\nNeusoft Xikang bears no responsibility of any direct, indirect, occasional, special or subsequent damages, the damage may come from: unfair using web services, buying goods on the net or doing the same type service, transacting in the Internet, using network services illegally or the information member sent changing. 
+		\nIf produce based telecommunications operator and the mobile communication network fault, technical defects, coverage limits, computer viruses, hackers, member location, member shutdown, fire, flood, riots, civil commotions, insurrections, wars, and natural disasters in the force majeure or more than Neusoft Xikang technical ability within the scope of the cause of service such as copperas hill sorting interrupt, members of the content of the information sent short loss, appear garbled, error receive, can"'"t receive, delay in receiving and affect Neusoft Xikang providing services, Neusoft Xikang need not assume any responsibility. 
+		\nX. Data Storage and Confinement
+		\nUnder no circumstances will Neusoft Xikang be liable in any way for any content, including, but not limited to, any errors or omissions in any content, or any loss or damage of any kind incurred as a result of the use of any content posted, emailed, transmitted or otherwise made available via the Service. Neusoft Xikang holds the right to judge and determine if user"'"s conduct has obeyed the terms of services, and Neusoft Xikang has the right to suspend or terminate your account and refuse any and all current or future use of the Service. 
+		\nXI. Security
+		\nYou agree to guarantee and defense the benefit of all of Xikang System"'"s members, and you have responsible for payment services beyond the attorney fees and violate caused damage compensation expenses of the terms of service. 
+		\nXII. Termination of Service
+		\nYou or Xikang System can interrupt one or more of the services according to the actual situation at any time. Neusoft Xikang needn"'"t take responsibility for single person or the third party. If there are objections to the modification of the terms or you are unsatisfied with Neusoft Xikang"'"s Service, you can exercise the following power: 
+		\n(1) Stopping using the network service of Xikang System.
+		\n(2) Informing Neusoft Xikang of stopping the service.
+		\nWhen you stop user service, the right you have to use the network will be terminate immediately. Since the termination, Neusoft Xikang will not assume the responsibility of you. 
+		\nXIII. Notice
+		\nAll notices may be sent to you via e-mail, regular mail or by way of announcement page. Neusoft Xikang will pass the message to you by one of the above methods, to inform you of terms of service modifications, service changes, or some other important things. Due to your own business not received relevant information, and lead to losses, Neusoft Xikang is not to take the responsibility. Meanwhile, the Neusoft Xikang retains your right to run commercial advertising.
+		\nXIV. Ownership of the Contents of Network Services
+		\nThe definition of Neusoft Xikang includes: text, software, sound, photographs, video, charts; the entire contents of the advertisements; the entire contents of e-mail; and the other information that Neusoft Xikang provides to you. All these information are protected by copyright, trademarks, labels and other property ownership laws. You can use these contents only by getting the permission of Neusoft Xikang and advertisers; you cannot copy, re-make or create derivative products that are content-related to our products by yourselves. All articles"'" copyright in Xikang website belongs to original author and / or Neusoft Xikang together or separately, for anyone who needs to reproduce the articles, must obtain the original author and / or Neusoft Xikang"'"s together or separate authorization.
+		\nXV. Mobile Service
+		\nThe website includes some mobile devices to send information services and related features, if you agree, we may communicate with you by mobile equipments, and also you can share with us some using information that are related to these services, if you change or cancel mobile phone number, you must update your new account information immediately to avoid that we send your information to others. 
+		\nXVI. Law
+		\nNeusoft Xikang does not exercise, fail to exercise immediately or not fully exercise the rights of this provision or rights according to the law, should not be deemed as abandon of these rights, and not affect Neusoft Xikang exercise those rights in the future. The terms of this agreement is applicable to the People"'"s Republic of China law. If any terms of services conflict with the law, these provisions will be reinterpreted by the law, while other terms still have legal effects and impacts. In case of disputes, you and Neusoft Xikang agree to under the jurisdiction of the People"'"s Court where Neusoft Xikang registered address located. The final interpretation of this agreement owns to Neusoft Xikang.
+		\nAttachment One:
+		\nWebsite privacy protection terms
+		\nThe contents of this website are provided by Shenyang Neusoft Medical Systems Co., LTD and its affiliates (hereinafter referred to as &quot;Neusoft Xikang&quot;, &quot;Neusoft Xikang Company&quot; or &quot;we&quot;). 
+		\nWhen you log in as the user of this website, use the services we provided to you, we will collect your personal information as well as the personal health related materials. Even so, we are extremely serious about your privacy and personal information security problems. This document is the explanation of us collecting and using your relevant information, we hope this will help you make decision on sharing information with us, so that we can provide you with better health services. 
+		\nThe information and some relevant data that we want to collect 
+		\n1. Collection of Information
+		\nLike other commercial organizations, we collect gathering information to monitor the use situation of this website, in this process we will not collect personal information that can be identified oneself. A typical example is that we collect the number of visitors of this website and each web page and also original domain name of Internet service providers. Such information is used to understand the purpose of visitors"'" use of the website, and be able to provide Neusoft Xikang internal or other third party sharing services. 
+		\n2. Personal Information
+		\nWhen you use this website or relevant health management services provided by Xikang, we will collect relevant information that can identify your personal identity, for example: your name, phone number, address, email address, etc. You may choose not to fill, but this could lead to when you need service, we can"'"t contact you immediately. 
+		\nAt the same time, in order to provide you better health management services, we may get some sensitive personal information about you, such as your physical or mental health status, but only in a voluntary offer way ,can we get this information. We may also get some points of view of you, for example, when you make feedbacks or ask questions. Sometimes, we may gain your personal information from other places, and will add it to your personal information that we have already known, to help us provide you with more personalized services.
+		\nInformation and some relevant data that we want to collect 
+		\n1. We use your information only in accordance with our privacy protectoral terms and notices that have offered to you to protect any data. But except for the following circumstances:
+		\n(1) Obtain the exact authorization of the users priory; 
+		\n(2) According to relevant laws and regulations; 
+		\n(3) In accordance with the requirements of relevant government departments;
+		\n(4) To safeguard the public interest;
+		\n(5) To safeguard the legitimate rights and interests of this website. 
+		\n2. This website may provide users relevant services with a third party, in this case, if the third party agreed to take the same responsibility with this site to protect users"'" privacy, then this website can provide the users"'" register information to the third party; 
+		\n3. Under the premise of not disclose information about individual user privacy, this website have the right to analyze the entire user database for commercial use. 
+		\nHow do we protect your information
+		\nTo protect the confidentiality of your personal information, we will store your personal information in a set password and firewall-protected server, and adopt security technologies and procedures to ensure the security of your personal information.
+		\nIn order to assure the professionalism of health management services, only experts who provide you with health care can view your personal information, we have signed privacy agreement with these experts to protect members, so that to ensure the confidentiality of your information. 
+		\nYour personal health information and account numbers and other sensitive information are protected by encryption algorithm during transmission. 
+		\nThe use of cookie
+		\nCookies are small files sent to your web browser and stored in your computer"'"s hard drive, sometimes they will be generated and transferred to your hard drive when your first register on the website. They will be used to identify your computer and allow you to visit the website without repeat landing every time. Cookies are only used to speed up your access to the website and required information. Most web browsers accept Cookies; usually you can change the settings of the browser to prevent the transfer of Cookies. But you must pay attention that, if you change the settings, some of the function of the use may lose. 
+		\nMisconduct
+		\nWe may use the collected and/or receive your information according to the national safety regulations to survey and help to stop illegal behavior or those threaten our network or endanger behavior that this website provisions.
+		\nAccess and Correction
+		\nYou have the right to login Xikang System at any time（http://www.xikang.com），view or change your personal information.
+		\nGive up further contact with us
+		\nWe may contact you at any time by e-mail or text message , to inform you of our products, services or Neusoft Xikang relevant information, which may help you. If you do not want to receive such information, you can call the customer service center of Neusoft Xikang 4001639399 easily choose not to accept our information. You should give clear indication of your name, user name, registration information (if any) and the name of the site in all contacts. 
+		\nLinks to other sites
+		\nThis site may contain links to other sites, this site is not responsible for other sites"'" privacy treaties or contents.
+		\nLegal public
+		\nYou have already understood, according to the mandatory provisions of law, the website may disclose your personal information without obtaining your prior permission and take no responsibility.
+		\nModification of this privacy protection terms
+		\nThe modification, update and explanation rights of this privacy protection terms belongs to this website. This website will update the terms and make them published, the updated contents become effective from the date of the publication, please visit regularly, in order to understand promptly.
+		\nDisclaimer
+		\nThis website guarantee that not open to the public or provide the users"'" register information and non-public content stored in this website when use network services, but when the following instances occurs, this website also have no need to take any responsibilities: 
+		\n1. As for you tell your user password to others or share register account with others, the result of disclosure of any personal information. 
+		\n2. As for force majeure ,such as users"'" own computer problems, hackers, administration, computer virus invades strike or attack, because of the government control and lead to a temporary close-up affect the normal operation of the network , caused personal data revealing, lost, stolen or be doctored, etc.
+		\n3. Because of other websites that links with this website lead to the personal data revealing and the result of any law dispute and the consequences. We recommend that when users left this website, pay attention to privacy statement of collect personal identification information in every website. This privacy statement only applies to collect information in this website.
+		\nAttachment Two:
+		\nIndividual and corporate clients
+		\nAccept terms of health management services 
+		\nProvided by the Shenyang Neusoft Medical Systems Co., Ltd
+		\nIndividual and corporate clients should agree with the whole contents of this term, so that to finish all of the registration refer to the system tips. During the execution of the process of the registration procedure, individual and group customers act &quot;agree&quot; operation according to the sounds, words or graphics tips, that is fully accept contents of this term.
+		\nAccording to China"'"s existing laws and regulations, Shenyang Neusoft Medical Systems Co., Ltd. and its affiliates (referred to as &quot;Neusoft Xikang&quot;, Neusoft Xikang network platform referred to as &quot;Xikang Network&quot;) provide health management services and remote monitoring functions for Xikang System registered users, which are limited to provide health management information services but not a substitute for medical examination, medical diagnosis and treatment. In order to fully protect the individual and corporate clients"'" rights to know services that Neusoft Xikang provides, Neusoft Xikang make the following terms of health management information services it provides.
+		\nXikang System health assessment system is a assessment of registered users health status and development trend in the future. Through the evaluation, you will better understand your health, you are prompted to effectively control, reduce or avoid risk factors for disease hazards to your health, but this assessment system can only provide trend analysis of results, not as a diagnostic tools. The health assessment report the system provides can serve as a reference for physicians, but not the medical report.
+		\nAll the results in the health assessment report that Xikang System health assessment system provides are based on health information you have already provided, if you feel the report does not match the actual situation, please check health information that you provide. If the result of health report is due to error information provided and subsequent distortion and health management mistakes, Neusoft Xikang is not responsible.
+		\nIf Xikang System register users need to seek for medical treatment and medication, the physician must be conducted by medical institutions. The ones who only refer health assessment report that Xikang System health assessment system provides and lead to any adverse consequences, should take responsibility all by registered users themselves.
+		\nThe time Neusoft Xikang provides health management services is limited to
+		\n08:30-17:30 (Monday to Friday, except statutory holidays), services response time 12-24 hours (Saturdays, Sundays, statutory holidays excluded).
+		\nShenyang Neusoft Medical Systems Co., Ltd. 
+		\nCome into force from June 24, 2011
+	</string>
+	<string name="common_binding">Bind Watch</string>
+	<string name="common_notice">Notice!</string>
+	<string name="common_ok">Ok</string>
+	<string name="common_cancel">Cancel</string>
+	<string name="common_back">Back</string>
+	<string name="common_login">Sign In</string>
+	<string name="common_register">Sign Up</string>
+	<string name="common_submit">Submit</string>
+	<string name="common_complete">Over</string>
+	<string name="common_refresh">Refresh</string>
+	<string name="common_share">Share</string>
+	<string name="common_bmi">BMI</string>
+	<string name="common_save">Save</string>
+	<string name="common_failed">Operation Failure.</string>
+	<string name="common_net_failed">Unable to retrive data from Xikang server.</string>
+	<string name="common_exit_message">Click back button again to exit the app.</string>
+	<string name="common_yes">Yes</string>
+	<string name="common_no">No</string>
+	<string name="common_open">On</string>
+	<string name="common_close">Off</string>
+	<string name="common_back_top">Go Back</string>
+	<string name="Product_Title_1">Steps</string>
+	<string name="Product_Title_2">Features</string>
+	<string name="Product_Title_3">Sports Watch</string>
+	<string name="Product_Content_1">在你的Android手机上绑定腕表ID(在包装盒或腕表后盖内侧获得)，才能查看到你带腕表时的运动记录。
+	</string>
+	<string name="Product_Content_2">通过该软件可以查看每天的卡路里消耗，历史运动情况，各类排行榜，还能关注及查看走跑活动等。
+	</string>
+	<string name="Product_Content_3">熙康腕表伴随您的城市足迹，承载个人运动体征指数和卡路里消耗检测，与您一同感受创建健康人生！
+	</string>
+	<string name="ranking_message">Beat @percent users.</string>
+	<string name="ranking_message1">Keep ordinary position.</string>
+	<string name="ranking_message2">Keep medium position.</string>
+	<string name="ranking_message3">Keep top position</string>
+	<string name="ranking_message4">Keep leading position</string>
+	<string name="ranking_message5">Keep leading position</string>
+	<string name="city_ranking_message">Beat @percent users.</string>
+	<string name="city_ranking_message1">你在@area的排名比较靠后</string>
+	<string name="city_ranking_message2">你在@area的排名比较靠前</string>
+	<string name="city_ranking_message3">你在@area的排名处于领先</string>
+	<string name="city_ranking_message4">你在@area的排名绝对领先</string>
+	<string name="city_ranking_message5">你在@area的排名第一</string>
+	<string name="group_ranking_message">Beat @percent users.</string>
+	<string name="group_ranking_message1">age岁人群中你的排名靠后</string>
+	<string name="group_ranking_message2">age岁人群中你的排名靠前</string>
+	<string name="group_ranking_message3">age岁人群中你的排名领先</string>
+	<string name="group_ranking_message4">age岁人群中你的排名超强</string>
+	<string name="group_ranking_message5">age岁人群中你的排名第一</string>
+	<string name="rank_county_label">National Ranking</string>
+	<string name="rank_city_label">City Ranking</string>
+	<string name="rank_group_label">Age-grouped Ranking</string>
+	<string name="rank">Ranking of Calorie</string>
+	<string name="rank_change_up">increased by num</string>
+	<string name="rank_change_down">decreased by num</string>
+	<string name="rank_change">unchanged</string>
+	<string name="sport_current_title">运动称号[@title]</string>
+	<string name="sport_next_title">再用day天腕表就可以晋级[@title]</string>
+	<string name="no_sport_title">Drop behind yet.Let"''"s put watch on and start to exercise.</string>
+	<string name="historycalorie_label">历史卡路里</string>
+	<string name="historydistance_label">历史距离</string>
+	<string name="historytime_label">历史时间</string>
+	<string name="historynum_label">历史步数</string>
+	<string name="historycal">共消耗卡路里</string>
+	<string name="historydistance">累计行走距离</string>
+	<string name="historyday">Your life extended for</string>
+	<string name="noSportTip">You have not exercised for day days of latest month,</string>
+	<string name="noSportTip_0">Exercise everyday, awesome.</string>
+	<string name="noSportTip_1">kind of lazy like snail.</string>
+	<string name="noSportTip_2">kind of lazy like koala.</string>
+	<string name="noSportTip_3">kind of lazy like ostrich.</string>
+	<string name="noSportTip_4">kind of lazy like hippo.</string>
+	<string name="noSportTip_5">kind of lazy like elephant.</string>
+	<string name="noSportTip_6">no word to describe how lazy you are.</string>
+	<string name="fattitle">might result in fat accumulation:</string>
+	<string name="noSportData">No History Record</string>
+	<string name="historyTime_tip">你累计行走day天\n击败了全国percent％的用户</string>
+	<string name="historyDistance_tip1">珠峰高度8.8公里,你已经走了</string>
+	<string name="historyDistance_tip2">国际马拉松赛周长42.1公里,你已经走了</string>
+	<string name="historyDistance_tip3">摩西穿越红海周长306公里，你已经走了</string>
+	<string name="historyDistance_tip4">长城总长6000公里,你已经走了</string>
+	<string name="historyDistance_tip5">地球周长4万公里,你已经走了</string>
+	<string name="historyDistance_tip6">月球到地球共38.4万公里,你已经走了</string>
+	<string name="distance">num circles</string>
+	<string name="historyDistance_Pagetip">共行走num公里</string>
+	<string name="calorieChartType1">最近一周</string>
+	<string name="calorieChartType2">最近一月</string>
+	<string name="calorieChartType3">最近一季</string>
+	<string name="distanceChartType1">最近一周</string>
+	<string name="distanceChartType2">最近一月</string>
+	<string name="distanceChartType3">最近一季</string>
+	<string name="actions_title">活动</string>
+	<string name="actions_map">地图</string>
+	<string name="actions_map_lines">我关注的路线</string>
+	<string name="actions_my_top">我的名次:第@num名</string>
+	<string name="actions_map_notice">num人关注</string>
+	<string name="actions_map_loading">请登录</string>
+</resources>

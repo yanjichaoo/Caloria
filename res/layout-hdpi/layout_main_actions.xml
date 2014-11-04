@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<include layout="@layout/layout_title_bar" />
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:gravity="center_horizontal"
+		android:paddingTop="5dp" android:paddingBottom="5dp">
+		<RadioGroup android:gravity="center" android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<RadioButton android:id="@+id/btnHotActions"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:background="@drawable/actions_hot_selector"
+				android:textColor="#FFFFFF" android:textSize="15sp" android:gravity="center"
+				android:button="@null" android:text="热门活动" />
+			<RadioButton android:id="@+id/btnMyActions"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:background="@drawable/actions_my_selector"
+				android:textColor="#FFFFFF" android:textSize="15sp" android:gravity="center"
+				android:button="@null" android:text="我参加的" />
+		</RadioGroup>
+	</LinearLayout>
+	<RelativeLayout android:layout_height="fill_parent"
+		android:layout_width="fill_parent" android:layout_margin="8dp"
+		android:background="@drawable/layout_black_bg">
+		<ListView android:id="@+id/lvActions" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:cacheColorHint="@android:color/transparent"
+			android:fadingEdge="none" android:divider="@drawable/list_line"
+			android:dividerHeight="2dp" />
+	</RelativeLayout>
+</LinearLayout>

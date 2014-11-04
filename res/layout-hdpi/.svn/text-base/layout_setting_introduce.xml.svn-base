@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center_horizontal"
+	android:background="@drawable/main_frame_bg">
+	<include layout="@layout/layout_title_bar" />
+	<LinearLayout android:orientation="vertical"
+		android:background="@drawable/layout_white_bg" style="@style/setting_layout_bg">
+		<FrameLayout android:id="@+id/lytSIAbout" style="@style/setting_layout">
+			<TextView style="@style/setting_layout_left" android:text="@string/setting_introduce_app" />
+			<ImageView style="@style/setting_layout_right" android:src="@drawable/main_setting_layout_right" />
+		</FrameLayout>
+	</LinearLayout>
+	<RelativeLayout android:background="@drawable/layout_white_bg"
+		style="@style/setting_layout_bg" android:padding="10dp"
+		android:layout_height="fill_parent" android:layout_marginBottom="15dp">
+
+		<LinearLayout android:id="@+id/lySIStandard1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#000000"
+				android:textSize="8sp" android:text="@string/setting_introduce_message1" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#000000"
+				android:textSize="10sp" android:text="@string/setting_introduce_message2"
+				android:layout_marginLeft="5dp" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/lySIStandard2"
+			android:layout_above="@id/lySIStandard1" android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/app_name"
+				android:textColor="#000000" android:textSize="20sp" />
+		</LinearLayout>
+
+		<ImageView android:layout_width="wrap_content"
+			android:layout_above="@id/lySIStandard2" android:layout_height="fill_parent"
+			android:src="@drawable/setting_introduce_ad"
+			android:layout_centerInParent="true" />
+
+	</RelativeLayout>
+</LinearLayout>

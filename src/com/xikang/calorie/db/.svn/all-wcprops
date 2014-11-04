@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/db
+END
+DB_Provider.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/db/DB_Provider.java
+END
+RemindService.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/db/RemindService.java
+END
+DB_Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/db/DB_Constants.java
+END
+DB_Helper.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/db/DB_Helper.java
+END
+DB_Interface.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/db/DB_Interface.java
+END
+CityService.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/db/CityService.java
+END
+UserInfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/db/UserInfoService.java
+END
+RankService.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/db/RankService.java
+END
+DB_ConnectionPool.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/26MobileApplication/!svn/ver/2/XiKang_Calorie/src/com/xikang/calorie/db/DB_ConnectionPool.java
+END

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#333333">
+
+	<com.xikang.calorie.view.CustomGallery
+		android:id="@+id/glPI" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:spacing="20dp"
+		android:fadingEdge="none" android:background="@drawable/layout_black_bg"
+		android:layout_alignTop="@+id/ibProductClose"
+		android:layout_alignRight="@id/ibProductClose"
+		android:layout_marginTop="15dp" android:layout_marginBottom="30dp"
+		android:layout_marginRight="10dp" android:layout_marginLeft="20dp"
+		android:unselectedAlpha="100" />
+
+	<ImageButton android:id="@id/ibProductClose"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:background="@drawable/product_close_selector"
+		android:layout_marginTop="10dp" android:layout_alignParentRight="true"
+		android:layout_marginRight="10dp" />
+
+
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true" android:layout_marginBottom="10dp">
+		<ImageView android:id="@+id/ivPiScroll1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@drawable/product_scroll_off" />
+
+		<ImageView android:id="@+id/ivPiScroll2" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@drawable/product_scroll_off"
+			android:layout_marginLeft="5dp" />
+		<ImageView android:id="@+id/ivPiScroll3" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@drawable/product_scroll_off"
+			android:layout_marginLeft="5dp" />
+	</LinearLayout>
+</RelativeLayout>
